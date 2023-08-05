@@ -17,6 +17,9 @@ import { RouterOutlet } from '@angular/router';
       <li>
         <a href="/overview">Overview</a>
       </li>
+      <li>
+        <a href="/team">Team</a>
+      </li>
     </nav>
     <main>
       <router-outlet/>
