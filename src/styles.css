@@ -6,19 +6,22 @@
 
   --background-color: #1a202c;
   --font-color: rgba(255, 255, 255, 0.92);
-  --font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
   --bold: 700;
   --letterSpacings-wider: 0.05em;
 
   --blue: #4299e1;
 
   background-color: var(--background-color);
-  color:  var(--font-color);
-  font-family: var(--font-family)
+  color: var(--font-color);
+  font-family: var(--font-family);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   border-width: 0;
   border-style: solid;
   box-sizing: border-box;
@@ -29,7 +32,7 @@ nav {
   display: flex;
   gap: 16px;
   height: 60px;
-  padding: 8px;
+  padding: 16px;
   border-bottom: 1px solid #171923;
   align-items: center;
 }
@@ -44,6 +47,8 @@ h1 {
 
 table {
   width: 100%;
+  margin-bottom: 2em;
+  overflow-x: scroll;
 }
 
 th {
@@ -73,7 +78,7 @@ td {
   font-size: 0.85rem;
   line-height: 1rem;
 
-  border-bottom: 1px solid #2D3748;
+  border-bottom: 1px solid #2d3748;
 }
 
 a {
@@ -82,6 +87,11 @@ a {
   text-decoration: underline;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }

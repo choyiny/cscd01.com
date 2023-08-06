@@ -27,33 +27,39 @@ import { RouterOutlet } from '@angular/router';
   `,
   styles: [
     `
-    .course {
-      color: var(--blue);
-      font-weight: var(--bold);
-    }
+      .course {
+        color: var(--blue);
+        font-weight: var(--bold);
+      }
 
-    main {
-      max-width: 80%;
-      margin: 0 auto;
-    }
+      main {
+        max-width: 85%;
+        margin: 0 auto;
+      }
 
-    a {
-      transition-property: box-shadow;
-      transition-duration: 150ms;
-      transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
-      cursor: pointer;
-      text-decoration: none;
-      outline: transparent solid 2px;
-      outline-offset: 2px;
-      color: #E2E8F0;
-      padding: 0.5rem;
-      font-size: 0.875rem;
-      font-weight: 500;
-    }
+      @media (max-width: 768px) {
+        main {
+          max-width: 90%;
+        }
+      }
 
-    a:focus {
-      box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.6);
-    }
+      a {
+        transition-property: box-shadow;
+        transition-duration: 150ms;
+        transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
+        cursor: pointer;
+        text-decoration: none;
+        outline: transparent solid 2px;
+        outline-offset: 2px;
+        color: #e2e8f0;
+        padding: 0.5rem;
+        font-size: 0.875rem;
+        font-weight: 500;
+      }
+
+      a:focus {
+        box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.6);
+      }
     `,
   ],
 })
