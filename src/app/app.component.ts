@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, RouterModule],
   template: `
     <nav>
       <li>
@@ -12,13 +12,13 @@ import { RouterOutlet } from '@angular/router';
       </li>
 
       <li>
-        <a href="/">Home</a>
+        <a routerLink="/">Home</a>
       </li>
       <li>
-        <a href="/overview">Overview</a>
+        <a routerLink="/schedule">Schedule</a>
       </li>
       <li>
-        <a href="/team">Team</a>
+        <a routerLink="/team">Team</a>
       </li>
     </nav>
     <main>

@@ -52,7 +52,7 @@ class MemberComponent {
         </li>
       </ul>
     </section>
-    <section>
+    <section style="display: none">
       <h1>Teaching Assistants</h1>
 
       <ul>

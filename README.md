@@ -1,26 +1,26 @@
-# Analog App
+# CSCD01 - Engineering Large Software Systems
 
-This project was generated with [Analog](https://analogjs.org), the fullstack meta-framework for Angular.
+This is the source code for the CSCD01 course website.
 
-## Setup
+Enjoy the course!
 
-Run `npm install` to install the application dependencies.
+## 🚀 Quick start
 
-## Development
+1.  **Install dependencies**
 
-Run `npm start` for a dev server. Navigate to `http://localhost:5173/`. The application automatically reloads if you change any of the source files.
+    ```shell
+    cd cscd01.com/
+    yarn install
+    ```
 
-## Build
+2.  **Start developing.**
 
-Run `npm run build` to build the client/server project. The client build artifacts are located in the `dist/analog/public` directory. The server for the API build artifacts are located in the `dist/analog/server` directory.
+    Navigate into your new site’s directory and start it up.
 
-## Test
+    ```shell
+    yarn dev
+    ```
 
-Run `npm run test` to run unit tests with [Vitest](https://vitest.dev).
+3.  **Open the code and start customizing!**
 
-## Community
-
-- Visit and Star the [GitHub Repo](https://github.com/analogjs/analog)
-- Join the [Discord](https://chat.analogjs.org)
-- Follow us on [Twitter](https://twitter.com/analogjs)
-- Become a [Sponsor](https://github.com/sponsors/brandonroberts)
+    Your site is now running at http://localhost:5173!
