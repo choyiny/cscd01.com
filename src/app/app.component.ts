@@ -8,17 +8,38 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   imports: [RouterOutlet, RouterModule, NgFor],
   template: `
     <nav>
-      <li>
-        <span class="course">CSCD01</span> Fall 2023
-      </li>
+      
+      <div class="burger">
+        <button (click)="collapse.classList.toggle('hidden')">
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+        </button>
+      </div>
 
-      <li *ngFor="let item of navItems">
-        <a class="nav-link" [routerLink]="item.path">{{ item.name }}</a>
-      </li>
+      <ul class="links">
+        <li>
+          <span class="course">CSCD01</span> Fall 2023
+        </li>
+  
+        <li *ngFor="let item of navItems">
+          <a class="nav-link" [routerLink]="item.path">{{ item.name }}</a>
+        </li>
+      </ul>
     </nav>
+
+    <div class="collapse hidden" #collapse>
+      <ul class="links">
+        <li *ngFor="let item of navItems">
+          <a class="nav-link" [routerLink]="item.path">{{ item.name }}</a>
+        </li>
+      </ul>
+    </div>
+  
     <main>
       <router-outlet/>
     </main>
+
     <footer>
       <div class="footer-line">
         <p>© 2022 Aleksander Bodurri and Cho Yin Yong. Made with <a href="https://analogjs.org">Analog</a>.</p>
@@ -27,6 +48,42 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   `,
   styles: [
     `
+
+      .burger {
+        display: flex;
+        justify-content: center;
+
+        @media screen and (min-width: 48em) {
+            display: none;
+            flex: auto;
+        }
+                
+        button {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          background: transparent;
+          transition-property: box-shadow;
+          transition-duration: 150ms;
+          transition-timing-function: cubic-bezier(0, 0, 0.4, 1);
+          align-self: center;
+          margin: 8px;
+          padding: 8px;
+          cursor: pointer;
+          
+          &:focus { 
+            box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.6);
+          }
+        }
+      }
+      
+
+      .burger-line {
+        width: 30px;
+        height: 3px;
+        background-color: #e2e8f0;
+      }
+
       footer {
         padding: 10px;
         background-color: rgb(23, 25, 35);
@@ -42,6 +99,48 @@ import { RouterModule, RouterOutlet } from '@angular/router';
       main {
         max-width: 85%;
         margin: 0 auto;
+      }
+
+      nav {
+        display: flex;
+        width: 100%;
+        border-bottom: 1px solid #171923;
+
+        ul {
+          @media screen and (max-width: 48em) {
+            display: none;
+          }
+        }
+      }
+
+      .collapse {
+        opacity: 1;
+        height: 100%;
+        max-height: 260px;
+        transition: max-height 0.3s linear, opacity 0.5s linear;
+        overflow: hidden;
+        
+        &.hidden {
+          opacity: 0;
+          max-height: 0;
+        }
+
+
+        .links {
+          flex-direction: column;
+          align-items: start;
+          height: 100%;
+        }
+      }
+
+      .links {
+        list-style: none;
+        display: flex;
+        gap: 16px;
+        height: 60px;
+        padding: 16px;
+        align-items: center;
+        margin: 0;
       }
 
       @media (max-width: 768px) {

@@ -27,16 +27,6 @@
   box-sizing: border-box;
 }
 
-nav {
-  list-style: none;
-  display: flex;
-  gap: 16px;
-  height: 60px;
-  padding: 16px;
-  border-bottom: 1px solid #171923;
-  align-items: center;
-}
-
 body {
   margin: 0;
 }
