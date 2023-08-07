@@ -117,6 +117,6 @@ class LectureItemComponent {
 })
 export default class SchedulePage {
   readonly lectures = injectContentFiles<LectureAttributes>((contentFile) =>
-    contentFile.filename.includes('/src/content/lectures/')
+    contentFile.filename.includes('/src/content/lectures/'),
   ).sort((a, b) => a.attributes.week - b.attributes.week);
 }

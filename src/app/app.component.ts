@@ -8,7 +8,6 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   imports: [RouterOutlet, RouterModule, NgFor],
   template: `
     <nav>
-      
       <div class="burger">
         <button (click)="collapse.classList.toggle('hidden')">
           <div class="burger-line"></div>
@@ -18,10 +17,8 @@ import { RouterModule, RouterOutlet } from '@angular/router';
       </div>
 
       <ul class="links">
-        <li>
-          <span class="course">CSCD01</span> Fall 2023
-        </li>
-  
+        <li><span class="course">CSCD01</span> Fall 2023</li>
+
         <li *ngFor="let item of navItems">
           <a class="nav-link" [routerLink]="item.path">{{ item.name }}</a>
         </li>
@@ -35,29 +32,31 @@ import { RouterModule, RouterOutlet } from '@angular/router';
         </li>
       </ul>
     </div>
-  
+
     <main>
-      <router-outlet/>
+      <router-outlet />
     </main>
 
     <footer>
       <div class="footer-line">
-        <p>© 2022 Aleksander Bodurri and Cho Yin Yong. Made with <a href="https://analogjs.org">Analog</a>.</p>
+        <p>
+          © 2022 Aleksander Bodurri and Cho Yin Yong. Made with
+          <a href="https://analogjs.org">Analog</a>.
+        </p>
       </div>
     </footer>
   `,
   styles: [
     `
-
       .burger {
         display: flex;
         justify-content: center;
 
         @media screen and (min-width: 48em) {
-            display: none;
-            flex: auto;
+          display: none;
+          flex: auto;
         }
-                
+
         button {
           display: flex;
           flex-direction: column;
@@ -70,13 +69,12 @@ import { RouterModule, RouterOutlet } from '@angular/router';
           margin: 8px;
           padding: 8px;
           cursor: pointer;
-          
-          &:focus { 
+
+          &:focus {
             box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.6);
           }
         }
       }
-      
 
       .burger-line {
         width: 30px;
@@ -117,14 +115,15 @@ import { RouterModule, RouterOutlet } from '@angular/router';
         opacity: 1;
         height: 100%;
         max-height: 260px;
-        transition: max-height 0.3s linear, opacity 0.5s linear;
+        transition:
+          max-height 0.3s linear,
+          opacity 0.5s linear;
         overflow: hidden;
-        
+
         &.hidden {
           opacity: 0;
           max-height: 0;
         }
-
 
         .links {
           flex-direction: column;

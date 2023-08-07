@@ -93,7 +93,7 @@ class CourseworkItemComponent {
 })
 export default class WorkPage {
   readonly courseworkList = injectContentFiles<CourseworkAttributes>(
-    (contentFile) => contentFile.filename.includes('/src/content/coursework')
+    (contentFile) => contentFile.filename.includes('/src/content/coursework'),
   ).sort((a, b) => {
     const aDate = new Date(a.attributes.dueDate);
     const bDate = new Date(b.attributes.dueDate);
