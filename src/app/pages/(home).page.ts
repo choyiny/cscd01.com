@@ -42,10 +42,13 @@ import { AsyncPipe, NgIf } from '@angular/common';
       </h1>
       <p class="description">{{ description }}</p>
       <p>
-        Instructors: <a target="_blank" href="https://choy.in">Cho Yin Yong</a>,
-        <a target="_blank" href="https://aleksanderbodurri.com"
-          >Aleksander Bodurri</a
-        >
+        Instructors: 
+        <a target="_blank" href="https://choy.in">
+          Cho Yin Yong
+        </a>,
+        <a target="_blank" href="https://www.linkedin.com/in/aleksanderbodurri">
+          Aleksander Bodurri
+        </a>
       </p>
     </div>
     <ng-container *ngIf="post$ | async as post">

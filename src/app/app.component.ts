@@ -87,6 +87,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
         background-color: rgb(23, 25, 35);
         display: flex;
         justify-content: center;
+        margin-top: auto;
       }
 
       .course {
@@ -95,7 +96,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
       }
 
       main {
-        max-width: 85%;
+        width: 85%;
         margin: 0 auto;
       }
 

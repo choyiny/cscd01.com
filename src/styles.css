@@ -19,6 +19,12 @@
   font-family: var(--font-family);
 }
 
+app-root {
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+}
+
 *,
 *::before,
 *::after {
