@@ -9,5 +9,12 @@ export interface LectureAttributes {
   title: string;
   description: string;
   week: number;
-  date: string;
+  date: Date;
+}
+
+export interface CourseworkAttributes {
+  title: string;
+  description: string;
+  releaseDate: Date;
+  dueDate: Date;
 }
