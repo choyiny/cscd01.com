@@ -25,12 +25,14 @@ import { RouterModule, RouterOutlet } from '@angular/router';
       </ul>
     </nav>
 
-    <div class="collapse hidden" #collapse>
-      <ul class="links">
-        <li *ngFor="let item of navItems">
-          <a class="nav-link" [routerLink]="item.path">{{ item.name }}</a>
-        </li>
-      </ul>
+    <div>
+      <div class="collapse hidden" #collapse>
+        <ul class="links">
+          <li *ngFor="let item of navItems">
+            <a class="nav-link" [routerLink]="item.path">{{ item.name }}</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <main>
