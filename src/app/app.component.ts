@@ -48,7 +48,6 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   `,
   styles: [
     `
-
       .burger {
         display: flex;
         justify-content: center;
