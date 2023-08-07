@@ -40,7 +40,10 @@ table {
   margin-bottom: 2em;
   overflow-x: scroll;
 
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
+  table {
     display: block;
   }
 }
