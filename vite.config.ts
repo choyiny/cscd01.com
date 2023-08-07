@@ -14,7 +14,32 @@ export default defineConfig(({ mode }) => ({
     mainFields: ['module'],
   },
   plugins: [
-    analog(),
+    analog({
+      prerender: {
+        routes: async () => [
+          '/',
+          '/lectures',
+          '/lectures/1',
+          '/lectures/2',
+          '/lectures/3',
+          '/lectures/4',
+          '/lectures/5',
+          '/lectures/6',
+          '/lectures/7',
+          '/lectures/8',
+          '/lectures/9',
+          '/lectures/10',
+          '/lectures/11',
+          '/lectures/12',
+          '/work',
+          '/work/team-formation',
+          '/work/group-presentation',
+          '/work/group-assignment',
+          '/work/open-source-project',
+          '/team'
+        ],
+      },
+    }),
     angular({
       inlineStylesExtension: 'scss',
     }),
