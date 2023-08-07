@@ -2,10 +2,11 @@ import { injectContentFiles } from '@analogjs/content';
 import { Component, Input } from '@angular/core';
 import { LectureAttributes } from '../interfaces/file-attributes';
 import { NgFor, NgIf } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   standalone: true,
-  imports: [NgIf],
+  imports: [NgIf, RouterLink],
   selector: 'app-lecture-item',
   styles: [
     `
@@ -54,7 +55,7 @@ import { NgFor, NgIf } from '@angular/common';
   ],
   template: `
     <a
-      [href]="'/lectures/' + lecture.slug"
+      [routerLink]="'/lectures/' + lecture.slug"
       class="lecture-item"
       *ngIf="lecture"
     >

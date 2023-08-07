@@ -2,10 +2,11 @@ import { Component, Input } from '@angular/core';
 import { CourseworkAttributes } from '../interfaces/file-attributes';
 import { injectContentFiles } from '@analogjs/content';
 import { NgFor, NgIf } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   standalone: true,
-  imports: [NgIf],
+  imports: [NgIf, RouterLink],
   selector: 'app-coursework-item',
   styles: [
     `
@@ -44,7 +45,7 @@ import { NgFor, NgIf } from '@angular/common';
     `,
   ],
   template: `
-    <a [href]="'/work/' + work.slug" class="work-item" *ngIf="work">
+    <a [routerLink]="'/work/' + work.slug" class="work-item" *ngIf="work">
       <div class="work-details">
         <div class="work-title">{{ work.attributes.title }}</div>
         <div class="work-date">
