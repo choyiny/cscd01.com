@@ -7,7 +7,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterOutlet, RouterModule, NgFor],
   template: `
-    <nav>
+    <nav class="noprint">
       <div class="burger">
         <button (click)="collapse.classList.toggle('hidden')">
           <div class="burger-line"></div>
@@ -37,7 +37,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
       <router-outlet />
     </main>
 
-    <footer>
+    <footer class="noprint">
       <div class="footer-line">
         <p>
           © 2022 Aleksander Bodurri and Cho Yin Yong. Made with
@@ -48,6 +48,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   `,
   styles: [
     `
+
       .burger {
         display: flex;
         justify-content: center;

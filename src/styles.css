@@ -92,3 +92,17 @@ h5,
 h6 {
   margin: 0;
 }
+
+@media print {
+  body {
+    margin: 2em 1em;
+  }
+
+  .noprint {
+    display: none !important;
+  }
+
+  * {
+    color: black !important;
+  }
+}
