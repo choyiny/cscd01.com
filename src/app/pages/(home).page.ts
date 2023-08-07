@@ -36,7 +36,7 @@ import { AsyncPipe, NgIf } from '@angular/common';
     `,
   ],
   template: `<div class="hero">
-      <img class="logo noprint" src="utsc-logo.svg" alt="UTSC Logo" />
+      <img width="300" height="154"  class="logo noprint" src="utsc-logo.svg" alt="UTSC Logo" />
       <h1>
         <span class="code">{{ courseCode }}</span> - {{ courseTitle }}
       </h1>
