@@ -72,5 +72,5 @@ export default class HomePage {
   courseCode = environment.courseCode;
   courseTitle = environment.courseTitle;
   description = environment.description;
-  post$ = injectContent<PostAttributes>();
+  post$ = injectContent<PostAttributes>({ customFilename: 'syllabus' });
 }
