@@ -1,20 +1,19 @@
-export interface PostAttributes {
+export interface FileAttributes {
   title: string;
-  slug: string;
   description: string;
+}
+
+export interface PostAttributes extends FileAttributes {
+  slug: string;
   coverImage: string;
 }
 
-export interface LectureAttributes {
-  title: string;
-  description: string;
+export interface LectureAttributes extends FileAttributes {
   week: number;
   date: Date;
 }
 
-export interface CourseworkAttributes {
-  title: string;
-  description: string;
+export interface CourseworkAttributes extends FileAttributes {
   releaseDate: Date;
   dueDate: Date;
 }

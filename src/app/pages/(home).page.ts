@@ -2,6 +2,21 @@ import { MarkdownComponent, injectContent } from '@analogjs/content';
 import { Component } from '@angular/core';
 import { PostAttributes } from '../interfaces/file-attributes';
 import { AsyncPipe, NgIf } from '@angular/common';
+import { environment } from '../../environments/environment';
+import { RouteMeta } from '@analogjs/router';
+
+export const routeMeta: RouteMeta = {
+  meta: [
+    {
+      property: 'og:title',
+      content: environment.courseCode + ' - ' + environment.courseTitle,
+    },
+    {
+      property: 'og:description',
+      content: environment.description.replace(/\n/g, ' ').trim(),
+    },
+  ],
+};
 
 @Component({
   standalone: true,
@@ -43,9 +58,7 @@ import { AsyncPipe, NgIf } from '@angular/common';
       <p class="description">{{ description }}</p>
       <p>
         Instructors: 
-        <a target="_blank" href="https://choy.in">
-          Cho Yin Yong
-        </a>,
+        <a target="_blank" href="https://choy.in">Cho Yin Yong</a>,
         <a target="_blank" href="https://www.linkedin.com/in/aleksanderbodurri">
           Aleksander Bodurri
         </a>
@@ -56,13 +69,8 @@ import { AsyncPipe, NgIf } from '@angular/common';
     </ng-container> `,
 })
 export default class HomePage {
-  courseCode = 'CSCD01';
-  courseTitle = 'Engineering Large Software Systems';
-  description = `
-  An introduction to the theory and practice of large-scale software system design, development,
-  and deployment. Project management; advanced UML; requirements engineering; verification and
-  validation; software architecture; performance modeling and analysis; formal methods in software
-  engineering.
-  `;
+  courseCode = environment.courseCode;
+  courseTitle = environment.courseTitle;
+  description = environment.description;
   post$ = injectContent<PostAttributes>();
 }
