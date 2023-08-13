@@ -1,26 +1,19 @@
 import { MarkdownComponent, injectContent } from '@analogjs/content';
 import { Component } from '@angular/core';
 import { PostAttributes } from '../interfaces/file-attributes';
-import { AsyncPipe, NgIf } from '@angular/common';
+import { AsyncPipe, NgFor, NgIf } from '@angular/common';
 import { environment } from '../../environments/environment';
 import { RouteMeta } from '@analogjs/router';
+import { getRouteMeta } from '../meta/route-meta';
 
-export const routeMeta: RouteMeta = {
-  meta: [
-    {
-      property: 'og:title',
-      content: environment.courseCode + ' - ' + environment.courseTitle,
-    },
-    {
-      property: 'og:description',
-      content: environment.description.replace(/\n/g, ' ').trim(),
-    },
-  ],
-};
+export const routeMeta: RouteMeta = getRouteMeta({
+  title: environment.fullTitle,
+  description: environment.description,
+});
 
 @Component({
   standalone: true,
-  imports: [MarkdownComponent, AsyncPipe, NgIf],
+  imports: [MarkdownComponent, AsyncPipe, NgIf, NgFor],
   styles: [
     `
       .hero {
@@ -51,17 +44,25 @@ export const routeMeta: RouteMeta = {
     `,
   ],
   template: `<div class="hero">
-      <img width="300" height="154"  class="logo noprint" src="utsc-logo.svg" alt="UTSC Logo" />
+      <img
+        width="300"
+        height="154"
+        class="logo noprint"
+        src="utsc-logo.svg"
+        alt="UTSC Logo"
+      />
       <h1>
         <span class="code">{{ courseCode }}</span> - {{ courseTitle }}
       </h1>
       <p class="description">{{ description }}</p>
       <p>
-        Instructors: 
-        <a target="_blank" href="https://choy.in">Cho Yin Yong</a>,
-        <a target="_blank" href="https://www.linkedin.com/in/aleksanderbodurri">
-          Aleksander Bodurri
-        </a>
+        Instructors:
+        <ng-container *ngFor="let instructor of instructors; let last = last">
+          <a target="_blank" [href]="instructor.website">{{
+            instructor.name
+          }}</a
+          ><span *ngIf="!last">, </span>
+        </ng-container>
       </p>
     </div>
     <ng-container *ngIf="post$ | async as post">
@@ -72,5 +73,6 @@ export default class HomePage {
   courseCode = environment.courseCode;
   courseTitle = environment.courseTitle;
   description = environment.description;
+  instructors = environment.instructors;
   post$ = injectContent<PostAttributes>({ customFilename: 'syllabus' });
 }

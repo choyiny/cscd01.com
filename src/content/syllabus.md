@@ -39,21 +39,21 @@ Slack direct message, we will not respond to any emails.
 
 |                                   | Office Hours   | Location |
 | --------------------------------- | -------------- | -------- |
-| Cho Yin Yong / Aleksander Bodurri | Tuesday 7-8pm  | MW 170	  |
+| Cho Yin Yong / Aleksander Bodurri | Tuesday 7-8pm  | MW 170   |
 | Cho Yin Yong / Aleksander Bodurri | Thursday 7-8pm | HW 215   |
 
 # Course Timing
 
-|         | Time              | Location | Instructor                        |
-| ------- | ----------------- | -------- | --------------------------------- |
-| LEC01   | Tuesday 5-7pm     | MW 170   | Cho Yin Yong / Aleksander Bodurri |
-| LEC02   | Thursday 5-7pm    | HW 215   | Cho Yin Yong / Aleksander Bodurri |
-| TUT0001 | Wednesday 7-8pm   | IC 308   |                                   |
-| TUT0002 | Friday 2-3pm      | IC 308   |                                   |
-| TUT0003 | Friday 11-12pm    | IC 308   |                                   |
-| TUT0004 | Thursday 12-1pm   | IC 308   |                                   |
-| TUT0005 | Thursday 3-4pm    | IC 308   |                                   |
-| TUT0006 | Thursday 4-5pm    | IC 308   |                                   |
+|         | Time            | Location | Instructor                        |
+| ------- | --------------- | -------- | --------------------------------- |
+| LEC01   | Tuesday 5-7pm   | MW 170   | Cho Yin Yong / Aleksander Bodurri |
+| LEC02   | Thursday 5-7pm  | HW 215   | Cho Yin Yong / Aleksander Bodurri |
+| TUT0001 | Wednesday 7-8pm | IC 308   |                                   |
+| TUT0002 | Friday 2-3pm    | IC 308   |                                   |
+| TUT0003 | Friday 11-12pm  | IC 308   |                                   |
+| TUT0004 | Thursday 12-1pm | IC 308   |                                   |
+| TUT0005 | Thursday 3-4pm  | IC 308   |                                   |
+| TUT0006 | Thursday 4-5pm  | IC 308   |                                   |
 
 # Course Information
 
@@ -66,8 +66,7 @@ the UI, please feel free to submit a pull request.
 - [Slack](https://utsc-cscd01.slack.com/join/signup#/domain-signup)
 
 The slack #general channel is the best place to ask technical questions, and general questions about
-the course, assignments and labs. For personal issues, please private message the instructor. I try to
-respond by the end of the next day. However, due to volume, it may take longer, especially on weekends.
+the course, assignments and project. For personal issues, please private message either instructor. I try to respond by the end of the next day. However, due to volume, it may take longer, especially on weekends.
 
 - [Anonymous Feedback Form](https://forms.gle/jo2WahYMYh7RdgSi9)
 
@@ -107,7 +106,8 @@ for missed/poorly completed work. It is your responsibility to ensure that all w
 time and to the best of your ability.
 
 If an emergency arises that prevents you from being able to complete any piece of work, or attend a
-quiz, contact one of the instructors immediately. You will need to declare your emergency on ACORN and send the instructors the exported page in order to be given special consideration.
+quiz, contact one of the instructors immediately. You must first declare your absence on ACORN with
+the Absence Declaration. Note that starting Fall 2023, the Absence Declaration is going to be limited to one time use each term, up to a maximum of 7 days. That declaration can/should be used for missing any academic obligations (class, quiz, mid-term, etc.). After students have used their one absence declaration in the term, further accommodations regarding missed work, make-ups, etc. will be at the discretion of the instructor.
 
 If a piece of work has been mis-marked or if you believe the rubric used to evaluate the work is not
 appropriate, you may request a remark. For a remark to succeed, you must clearly and concisely express

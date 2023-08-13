@@ -3,6 +3,14 @@ import { Component, Input } from '@angular/core';
 import { LectureAttributes } from '../interfaces/file-attributes';
 import { NgFor, NgIf } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { RouteMeta } from '@analogjs/router';
+import { getRouteMeta } from '../meta/route-meta';
+import { environment } from '../../environments/environment';
+
+export const routeMeta: RouteMeta = getRouteMeta({
+  partialTitle: 'Schedule',
+  description: `Lecture Schedule for ${environment.courseCode} ${environment.courseTitle}`,
+});
 
 @Component({
   standalone: true,

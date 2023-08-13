@@ -36,7 +36,7 @@ export default defineConfig(({ mode }) => ({
           '/work/group-presentation',
           '/work/group-assignment',
           '/work/open-source-project',
-          '/team'
+          '/team',
         ],
       },
     }),

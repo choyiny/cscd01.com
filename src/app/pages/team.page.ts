@@ -1,4 +1,13 @@
+import { NgFor } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { environment } from '../../environments/environment';
+import { RouteMeta } from '@analogjs/router';
+import { getRouteMeta } from '../meta/route-meta';
+
+export const routeMeta: RouteMeta = getRouteMeta({
+  partialTitle: 'Team',
+  description: `Teaching Team for ${environment.courseCode} ${environment.courseTitle}`,
+});
 
 @Component({
   standalone: true,
@@ -38,16 +47,10 @@ class MemberComponent {
       <h1>Instructors</h1>
 
       <ul>
-        <li>
+        <li *ngFor="let instructor of instructors">
           <app-member
-            name="Cho Yin Yong"
-            title="Engineering Manager, Verto Health"
-          ></app-member>
-        </li>
-        <li>
-          <app-member
-            name="Aleksander Bodurri"
-            title="Development Team Lead, Verto Health | Angular Team Member"
+            [name]="instructor.name"
+            [title]="instructor.title"
           ></app-member>
         </li>
       </ul>
@@ -115,6 +118,8 @@ class MemberComponent {
       }
     `,
   ],
-  imports: [MemberComponent],
+  imports: [MemberComponent, NgFor],
 })
-export default class TeamPageComponent {}
+export default class TeamPageComponent {
+  instructors = environment.instructors;
+}
