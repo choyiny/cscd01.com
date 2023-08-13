@@ -38,6 +38,9 @@ export default defineConfig(({ mode }) => ({
           '/work/open-source-project',
           '/team',
         ],
+        sitemap: {
+          host: 'https://cscd01.com',
+        },
       },
     }),
     angular({
