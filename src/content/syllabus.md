@@ -37,23 +37,23 @@ We encourage you to post questions regarding course materials and assignments on
 you need extended support, the course staff will hold office hours. Please contact course staff via
 Slack direct message, we will not respond to any emails.
 
-|                                   | Office Hours   | Location |
-| --------------------------------- | -------------- | -------- |
-| Cho Yin Yong / Aleksander Bodurri | Tuesday 7-8pm  | MW 170   |
-| Cho Yin Yong / Aleksander Bodurri | Thursday 7-8pm | HW 215   |
+|                                   | Office Hours   | Location                |
+| --------------------------------- | -------------- | ----------------------- |
+| Cho Yin Yong / Aleksander Bodurri | Tuesday 7-8pm  | Available on Quercus	   |
+| Cho Yin Yong / Aleksander Bodurri | Thursday 7-8pm | Available on Quercus	   |
 
 # Course Timing
 
-|         | Time            | Location | Instructor                        |
-| ------- | --------------- | -------- | --------------------------------- |
-| LEC01   | Tuesday 5-7pm   | MW 170   | Cho Yin Yong / Aleksander Bodurri |
-| LEC02   | Thursday 5-7pm  | HW 215   | Cho Yin Yong / Aleksander Bodurri |
-| TUT0001 | Wednesday 7-8pm | IC 308   |                                   |
-| TUT0002 | Friday 2-3pm    | IC 308   |                                   |
-| TUT0003 | Friday 11-12pm  | IC 308   |                                   |
-| TUT0004 | Thursday 12-1pm | IC 308   |                                   |
-| TUT0005 | Thursday 3-4pm  | IC 308   |                                   |
-| TUT0006 | Thursday 4-5pm  | IC 308   |                                   |
+|         | Time            | Location               | Instructor                        |
+| ------- | --------------- | ---------------------- | --------------------------------- |
+| LEC01   | Tuesday 5-7pm   | Available on ACORN	   | Cho Yin Yong / Aleksander Bodurri |
+| LEC02   | Thursday 5-7pm  | Available on ACORN	   | Cho Yin Yong / Aleksander Bodurri |
+| TUT0001 | Wednesday 7-8pm | Available on Quercus   |                                   |
+| TUT0002 | Friday 2-3pm    | Available on Quercus   |                                   |
+| TUT0003 | Friday 11-12pm  | Available on Quercus   |                                   |
+| TUT0004 | Thursday 12-1pm | Available on Quercus   |                                   |
+| TUT0005 | Thursday 3-4pm  | Available on Quercus   |                                   |
+| TUT0006 | Thursday 4-5pm  | Available on Quercus   |                                   |
 
 # Course Information
 
