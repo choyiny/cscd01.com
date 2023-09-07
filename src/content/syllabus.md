@@ -37,23 +37,23 @@ We encourage you to post questions regarding course materials and assignments on
 you need extended support, the course staff will hold office hours. Please contact course staff via
 Slack direct message, we will not respond to any emails.
 
-|                                   | Office Hours   | Location                |
-| --------------------------------- | -------------- | ----------------------- |
-| Cho Yin Yong / Aleksander Bodurri | Tuesday 7-8pm  | After Lecture	   |
-| Cho Yin Yong / Aleksander Bodurri | Thursday 7-8pm | After Lecture	   |
+|                                   | Office Hours   | Location      |
+| --------------------------------- | -------------- | ------------- |
+| Cho Yin Yong / Aleksander Bodurri | Tuesday 7-8pm  | After Lecture |
+| Cho Yin Yong / Aleksander Bodurri | Thursday 7-8pm | After Lecture |
 
 # Course Timing
 
-|         | Time            | Location               | Instructor                        |
-| ------- | --------------- | ---------------------- | --------------------------------- |
-| LEC01   | Tuesday 5-7pm   | Available on ACORN     | Cho Yin Yong / Aleksander Bodurri |
-| LEC02   | Thursday 5-7pm  | Available on ACORN	 | Cho Yin Yong / Aleksander Bodurri |
-| TUT0001 | Wednesday 7-8pm | Available on ACORN     |                                   |
-| TUT0002 | Friday 2-3pm    | Available on ACORN     |                                   |
-| TUT0003 | Friday 11-12pm  | Available on ACORN     |                                   |
-| TUT0004 | Tuesday 7-8pm   | Available on ACORN     |                                   |
-| TUT0005 | Thursday 3-4pm  | Available on ACORN     |                                   |
-| TUT0006 | Thursday 4-5pm  | Available on ACORN     |                                   |
+|         | Time            | Location           | Instructor                        |
+| ------- | --------------- | ------------------ | --------------------------------- |
+| LEC01   | Tuesday 5-7pm   | Available on ACORN | Cho Yin Yong / Aleksander Bodurri |
+| LEC02   | Thursday 5-7pm  | Available on ACORN | Cho Yin Yong / Aleksander Bodurri |
+| TUT0001 | Wednesday 7-8pm | Available on ACORN |                                   |
+| TUT0002 | Friday 2-3pm    | Available on ACORN |                                   |
+| TUT0003 | Friday 11-12pm  | Available on ACORN |                                   |
+| TUT0004 | Tuesday 7-8pm   | Available on ACORN |                                   |
+| TUT0005 | Thursday 3-4pm  | Available on ACORN |                                   |
+| TUT0006 | Thursday 4-5pm  | Available on ACORN |                                   |
 
 # Course Information
 

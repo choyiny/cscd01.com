@@ -11,6 +11,7 @@ export interface PostAttributes extends FileAttributes {
 export interface LectureAttributes extends FileAttributes {
   week: number;
   date: Date;
+  googleSlidesUrl?: string;
 }
 
 export interface CourseworkAttributes extends FileAttributes {
