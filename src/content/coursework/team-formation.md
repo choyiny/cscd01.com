@@ -30,7 +30,7 @@ Your team agreement should cover how the contribution factor should be affected 
 - When a team member is unreachable or unresponsive (please specify the response times clearly)
 - When a team member misses a scheduled meeting
 - When a team member drops out
-- When is team member is unable to complete his part of the activity
+- When a team member is unable to complete his part of the activity
 
 Your team agreement can also optionally contain other situations in which the contribution factor is affected. This is up to the discretion of the team.
 
