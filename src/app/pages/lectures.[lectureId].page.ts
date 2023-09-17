@@ -1,7 +1,13 @@
-import { MarkdownComponent, injectContent } from '@analogjs/content';
-import { Component } from '@angular/core';
+import {
+  ContentFile,
+  MarkdownComponent,
+  injectContent,
+} from '@analogjs/content';
+import { Component, inject } from '@angular/core';
 import { LectureAttributes } from '../interfaces/file-attributes';
 import { AsyncPipe, NgIf } from '@angular/common';
+import { Meta, Title } from '@angular/platform-browser';
+import { getMeta } from '../meta/route-meta';
 
 @Component({
   standalone: true,
@@ -19,22 +25,44 @@ import { AsyncPipe, NgIf } from '@angular/common';
   ],
   template: `
     <div class="container">
-      <ng-container *ngIf="post$ | async as post">
-        <h1>Week {{ post.attributes.week }}: {{ post.attributes.title }}</h1>
-        <p>{{ post.attributes.description }}</p>
-        <a
-          *ngIf="post.attributes.googleSlidesUrl"
-          [href]="post.attributes.googleSlidesUrl"
+      <ng-container *ngIf="lecture">
+        <h1>
+          Week {{ lecture.attributes.week }}: {{ lecture.attributes.title }}
+        </h1>
+        <p>{{ lecture.attributes.description }}</p>
+        <analog-markdown [content]="lecture.content"></analog-markdown>
+        <a [href]="lecture.attributes.googleSlidesUrl" target="_blank"
           >Lecture Slides</a
         >
-        <analog-markdown [content]="post.content"></analog-markdown>
       </ng-container>
     </div>
   `,
+  providers: [Meta],
 })
 export default class LectureComponent {
-  post$ = injectContent<LectureAttributes>({
-    param: 'lectureId',
-    subdirectory: 'lectures',
-  });
+  meta = inject(Meta);
+  title = inject(Title);
+  lecture: ContentFile<LectureAttributes | Record<string, never>> | undefined =
+    undefined;
+
+  constructor() {
+    injectContent<LectureAttributes>({
+      param: 'lectureId',
+      subdirectory: 'lectures',
+    }).subscribe((lecture) => {
+      this.setLecture(lecture);
+    });
+  }
+
+  setLecture(lecture: ContentFile<LectureAttributes | Record<string, never>>) {
+    this.lecture = lecture;
+    this.title.setTitle(
+      `Week ${lecture.attributes.week}: ${lecture.attributes.title}`,
+    );
+    const meta = getMeta({
+      title: `Week ${lecture.attributes.week}: ${lecture.attributes.title}`,
+      description: lecture.attributes.description,
+    });
+    meta.forEach((tag) => this.meta.updateTag(tag));
+  }
 }
