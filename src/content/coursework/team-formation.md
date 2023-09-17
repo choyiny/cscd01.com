@@ -45,3 +45,7 @@ Please raise this issue only as a last resort.
 The TA will use the team agreement to make a final decision on the contribution factor for each team member. The TA will not apply adjustments that are out of the scope of the team agreement, and also will not enforce team agreements that are overly vague.
 
 If you are unsatisfied with the result, please ask the TA to reach out to the course instructors for a final decision.
+
+# Submission
+
+Please submit your team agreeemnt to the Google doc shared to you by the TA by the deadline.

@@ -111,3 +111,9 @@ h6 {
     color: black !important;
   }
 }
+
+blockquote {
+  margin: 0;
+  border-left: 2px solid white;
+  padding-left: 1em;
+}
