@@ -8,10 +8,11 @@ import { LectureAttributes } from '../interfaces/file-attributes';
 import { AsyncPipe, NgIf } from '@angular/common';
 import { Meta, Title } from '@angular/platform-browser';
 import { getMeta } from '../meta/route-meta';
+import { SafePipe } from '../pipes/safe.pipe';
 
 @Component({
   standalone: true,
-  imports: [MarkdownComponent, AsyncPipe, NgIf],
+  imports: [MarkdownComponent, AsyncPipe, NgIf, SafePipe],
   styles: [
     `
       .container {
@@ -31,9 +32,23 @@ import { getMeta } from '../meta/route-meta';
         </h1>
         <p>{{ lecture.attributes.description }}</p>
         <analog-markdown [content]="lecture.content"></analog-markdown>
-        <a [href]="lecture.attributes.googleSlidesUrl" target="_blank"
+        <a
+          *ngIf="lecture.attributes.googleSlidesUrl"
+          [href]="lecture.attributes.googleSlidesUrl"
+          target="_blank"
           >Lecture Slides</a
         >
+        <iframe
+          *ngIf="lecture.attributes.googleSlidesUrl"
+          [src]="lecture.attributes.googleSlidesUrl + 'embed' | safe"
+          frameborder="0"
+          width="100%"
+          height="500"
+          allowfullscreen="true"
+          mozallowfullscreen="true"
+          webkitallowfullscreen="true"
+        >
+        </iframe>
       </ng-container>
     </div>
   `,
