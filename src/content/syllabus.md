@@ -37,10 +37,15 @@ We encourage you to post questions regarding course materials and assignments on
 you need extended support, the course staff will hold office hours. Please contact course staff via
 Slack direct message, we will not respond to any emails.
 
-|                                   | Office Hours   | Location      |
-| --------------------------------- | -------------- | ------------- |
-| Cho Yin Yong / Aleksander Bodurri | Tuesday 7-8pm  | After Lecture |
-| Cho Yin Yong / Aleksander Bodurri | Thursday 7-8pm | After Lecture |
+|                                   | Office Hours    | Location      |
+| --------------------------------- | --------------- | ------------- |
+| Cho Yin Yong / Aleksander Bodurri | Tuesday 7-8pm   | After Lecture |
+| Cho Yin Yong / Aleksander Bodurri | Thursday 7-8pm  | After Lecture |
+| Simon Ha                          | Monday 2-3pm    | CS Help Lab   |
+| Yifei Yin / Esra Kastrati         | Tuesday 6-7pm   | CS Help Lab   |
+| Navinn Ravindaran                 | Wednesday 6-7pm | CS Help Lab   |
+| Aryan Patel                       | Thursday 4-5pm  | CS Help Lab   |
+| Ryan Blasetti                     | Friday 1-2pm    | CS Help Lab   |
 
 # Course Timing
 
@@ -48,12 +53,11 @@ Slack direct message, we will not respond to any emails.
 | ------- | --------------- | ------------------ | --------------------------------- |
 | LEC01   | Tuesday 5-7pm   | Available on ACORN | Cho Yin Yong / Aleksander Bodurri |
 | LEC02   | Thursday 5-7pm  | Available on ACORN | Cho Yin Yong / Aleksander Bodurri |
-| TUT0001 | Wednesday 7-8pm | Available on ACORN |                                   |
-| TUT0002 | Friday 2-3pm    | Available on ACORN |                                   |
-| TUT0003 | Friday 11-12pm  | Available on ACORN |                                   |
-| TUT0004 | Tuesday 7-8pm   | Available on ACORN |                                   |
-| TUT0005 | Thursday 3-4pm  | Available on ACORN |                                   |
-| TUT0006 | Thursday 4-5pm  | Available on ACORN |                                   |
+| TUT0001 | Wednesday 7-8pm | Available on ACORN | Navinn Ravindaran                 |
+| TUT0002 | Friday 2-3pm    | Available on ACORN | Ryan Blasetti                     |
+| TUT0004 | Tuesday 7-8pm   | Available on ACORN | Yifei Yin / Esra Kastrati         |
+| TUT0005 | Thursday 3-4pm  | Available on ACORN | Aryan Patel                       |
+| TUT0006 | Thursday 4-5pm  | Available on ACORN | Simon Ha                          |
 
 # Course Information
 

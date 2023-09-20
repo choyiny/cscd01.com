@@ -55,27 +55,21 @@ class MemberComponent {
         </li>
       </ul>
     </section>
-    <section style="display: none">
-      <h1>Teaching Assistants</h1>
-
+    <section>
+      <h1>
+        Sessional Instructional Assistants - Software Architects in Residence
+      </h1>
       <ul>
-        <li>
-          <app-member name="Teaching Assistant 1"></app-member>
+        <li *ngFor="let member of sessionalInstructionalAssistants">
+          <app-member [name]="member.name" [title]="member.title"></app-member>
         </li>
-        <li>
-          <app-member name="Teaching Assistant 2"></app-member>
-        </li>
-        <li>
-          <app-member name="Teaching Assistant 3"></app-member>
-        </li>
-        <li>
-          <app-member name="Teaching Assistant 4"></app-member>
-        </li>
-        <li>
-          <app-member name="Teaching Assistant 5"></app-member>
-        </li>
-        <li>
-          <app-member name="Teaching Assistant 6"></app-member>
+      </ul>
+    </section>
+    <section>
+      <h1>Teaching Assistants</h1>
+      <ul>
+        <li *ngFor="let member of teachingAssistants">
+          <app-member [name]="member.name" [title]="member.title"></app-member>
         </li>
       </ul>
     </section>
@@ -122,4 +116,7 @@ class MemberComponent {
 })
 export default class TeamPageComponent {
   instructors = environment.instructors;
+  teachingAssistants = environment.teachingAssistants;
+  sessionalInstructionalAssistants =
+    environment.sessionalInstructionalAssistants;
 }

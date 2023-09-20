@@ -16,4 +16,32 @@ export const environment = {
       title: 'Development Team Lead, Verto Health | Angular Team Member',
     },
   ],
+  teachingAssistants: [
+    {
+      name: 'Simon Ha',
+      title: '4th Year | Cloudflare',
+    },
+    {
+      name: 'Navinn Ravindaran',
+      title: '4th Year | Hubspot, American Express',
+    },
+    {
+      name: 'Aryan Patel',
+      title: '4th Year | Wealthsimple',
+    },
+    {
+      name: 'Ryan Blasetti',
+      title: '4th Year | Uber, Intel',
+    },
+  ],
+  sessionalInstructionalAssistants: [
+    {
+      name: 'Yifei Yin',
+      title: 'Full Stack Developer, Verto Health',
+    },
+    {
+      name: 'Esra Kastrati',
+      title: 'Full Stack Developer, Verto Health',
+    },
+  ],
 };
