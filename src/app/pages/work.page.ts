@@ -32,6 +32,11 @@ export const routeMeta: RouteMeta = getRouteMeta({
         cursor: pointer;
       }
 
+      .work-item.disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+      }
+
       .work-details {
         flex: 8;
         padding: 0 1em;
@@ -53,12 +58,18 @@ export const routeMeta: RouteMeta = getRouteMeta({
     `,
   ],
   template: `
-    <a [routerLink]="'/work/' + work.slug" class="work-item" *ngIf="work">
+    <a
+      [routerLink]="isReleased() ? '/work/' + work.slug : []"
+      class="work-item"
+      *ngIf="work"
+      [class]="{ disabled: !isReleased() }"
+    >
       <div class="work-details">
         <div class="work-title">{{ work.attributes.title }}</div>
-        <div class="work-date">
+        <div class="work-date" *ngIf="isReleased()">
           Due on {{ getDateString(work.attributes.dueDate) }}
         </div>
+        <div class="work-date" *ngIf="!isReleased()">Coming Soon</div>
       </div>
     </a>
   `,
@@ -71,6 +82,10 @@ class CourseworkItemComponent {
       month: 'long',
       day: 'numeric',
     });
+  }
+
+  isReleased() {
+    return new Date(this.work?.attributes.releaseDate).getTime() <= Date.now();
   }
 }
 
@@ -102,10 +117,15 @@ class CourseworkItemComponent {
 })
 export default class WorkPage {
   readonly courseworkList = injectContentFiles<CourseworkAttributes>(
-    (contentFile) => contentFile.filename.includes('/src/content/coursework'),
+    (contentFile) => {
+      const isCoursework = contentFile.filename.includes(
+        '/src/content/coursework',
+      );
+      return isCoursework;
+    },
   ).sort((a, b) => {
-    const aDate = new Date(a.attributes.dueDate);
-    const bDate = new Date(b.attributes.dueDate);
+    const aDate = new Date(a.attributes.releaseDate);
+    const bDate = new Date(b.attributes.releaseDate);
     return aDate.getTime() - bDate.getTime();
   });
 }
