@@ -41,7 +41,7 @@ Slack direct message, we will not respond to any emails.
 | --------------------------------- | --------------- | ------------- |
 | Cho Yin Yong / Aleksander Bodurri | Tuesday 7-8pm   | After Lecture |
 | Cho Yin Yong / Aleksander Bodurri | Thursday 7-8pm  | After Lecture |
-| Simon Ha                          | Monday 2-3pm    | CS Help Lab   |
+| Simon Ha                          | Monday 2-3pm    | CS Help Lab => IC402   |
 | Yifei Yin / Esra Kastrati         | Tuesday 6-7pm   | CS Help Lab   |
 | Navinn Ravindaran                 | Wednesday 6-7pm | CS Help Lab   |
 | Aryan Patel                       | Thursday 4-5pm  | CS Help Lab   |
