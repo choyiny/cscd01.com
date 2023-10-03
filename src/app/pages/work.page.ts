@@ -85,7 +85,10 @@ class CourseworkItemComponent {
   }
 
   isReleased() {
-    const date = new Date(this.work?.attributes.releaseDate);
+    if (!this.work) {
+      return false;
+    }
+    const date = new Date(this.work.attributes.releaseDate);
     if (date) {
       return date.getTime() <= Date.now();
     }
