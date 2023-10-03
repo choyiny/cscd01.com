@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CourseworkAttributes } from '../interfaces/file-attributes';
-import { injectContentFiles } from '@analogjs/content';
+import { ContentFile, injectContentFiles } from '@analogjs/content';
 import { NgFor, NgIf } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { RouteMeta } from '@analogjs/router';
@@ -75,7 +75,7 @@ export const routeMeta: RouteMeta = getRouteMeta({
   `,
 })
 class CourseworkItemComponent {
-  @Input() work: CourseworkAttributes | undefined = undefined;
+  @Input() work: ContentFile<CourseworkAttributes> | undefined = undefined;
 
   getDateString(date: Date) {
     return new Date(date).toLocaleString('en-US', {
@@ -85,7 +85,11 @@ class CourseworkItemComponent {
   }
 
   isReleased() {
-    return new Date(this.work?.attributes.releaseDate).getTime() <= Date.now();
+    const date = new Date(this.work?.attributes.releaseDate);
+    if (date) {
+      return date.getTime() <= Date.now();
+    }
+    return false;
   }
 }
 

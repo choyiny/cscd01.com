@@ -15,6 +15,6 @@ export interface LectureAttributes extends FileAttributes {
 }
 
 export interface CourseworkAttributes extends FileAttributes {
-  releaseDate: Date;
+  releaseDate: string;
   dueDate: Date;
 }
