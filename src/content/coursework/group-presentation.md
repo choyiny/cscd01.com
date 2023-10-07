@@ -2,7 +2,7 @@
 title: Group Presentation - Architectural Kata
 description: An architectural kata is an exercise that aims to train software architects. In this assignment, you will be given a scenario and you will be asked to design a system that satisfies the requirements of the scenario.
 releaseDate: 2023-10-06
-dueDate: 2023-10-27
+dueDate: 2023-11-03
 ---
 
 # Overview
@@ -15,7 +15,7 @@ An architectural kata is an exercise that aims to train software architects. The
 
 # Schedule your presentation
 
-Your presentation will happen from October 16th to October 27th during TA’s office hours or your dedicated tutorial. The TAs will set up appointment scheduling links. The spots are released on a first-come-first-serve basis.
+Your presentation will happen from October 23rd to November 3rd during TA’s office hours or your dedicated tutorial. The TAs will set up appointment scheduling links. The spots are released on a first-come-first-serve basis.
 
 # 72 hours prior to your presentation
 
