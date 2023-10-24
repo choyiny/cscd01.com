@@ -47,8 +47,11 @@ The TAs will ask questions related to:
 
 # Grading
 
+> Scoring method last updated on Oct 23 2023 based on clarity and student feedback. Evaluation method
+> has not changed.
+
 Your team will be graded on 3 parts:
 
-1. Questions that were asked prior to the presentation (for all team members)
-2. Presentation (for team members who presented)
-3. TA Q&A (for team members who answered questions)
+1. Questions that were asked prior to the presentation
+2. Presentation
+3. TA Q&A
