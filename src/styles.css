@@ -117,3 +117,8 @@ blockquote {
   border-left: 2px solid white;
   padding-left: 1em;
 }
+
+hr {
+  height: 1px;
+  background: currentColor;
+}
