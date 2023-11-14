@@ -1,7 +1,7 @@
 ---
 title: Group Assignment - Writing a Solution Architecture Document
-releaseDate: 2023-11-013
-dueDate: 2023-11-30
+releaseDate: 2023-11-13
+dueDate: 2023-11-30T23:59:00.000Z
 ---
 ---
 Complex problems tend to require more complex solutions. Large systems are difficult for an individual to keep track of, even the individual who architected it.
