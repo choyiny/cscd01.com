@@ -73,6 +73,8 @@ Here you will apply the mitigation strategies from your risk assessment to your 
 *   Component Diagrams + Descriptions
     *   Make note of any revised architectural decisions
 
+See booklit.app example from lecture (week 11).
+
 ## Submission
 ___
 Create your solution archicecture documents in a google doc. Once you are finished and ready to hand in your assignment, share it with your TA on slack.
@@ -83,3 +85,9 @@ Create your solution archicecture documents in a google doc. Once you are finish
 ---
 *   You will not be rewarded for verbosity. This is not an essay. This type of document is meant to be digestible by many stakeholders within multiple companies. Clarity and conciseness are valued more by business folk who have busy jobs.
 *   You will be rewarded for providing justification for your decisions. Remember, there is no perfect architecture, but you must be able to make informed and defensible decisions.
+
+### Tips for steps 3-5
+*   Start with a basic architecture that meets your functional requirements
+    *   Risk assess that architecture with your team in the context of the non-functional requirements that you’ve identified.
+    *   Apply mitigation strategies to the basic architecture to mitigate all the risks you’ve identified. Then update your diagrams.
+*   You DO NOT have to make component diagrams for containers that would not be built by your team. For example, you do not need to create a component diagram for a PostgreSQL database that you have in your container diagram.
