@@ -31,7 +31,7 @@ Your TA will assign your group two mutations. A mutation adds or modifies an exi
 ## Your Task
 ---
 
-Given the Kata above and the two mutations received by your TA. Create a solution architecture document.
+Given the Kata above and the two mutations received by your TA. Create a solution architecture document. You may assume that your TA's and instructors in this course play the role of employees at Xtra-Health. In your document, list their names and assign them roles (ex. Project manager, executive sponsor, IT support, etc).
 
 Below you will find a template for how this document should be structured.
 
