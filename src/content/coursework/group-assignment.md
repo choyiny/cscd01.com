@@ -25,6 +25,8 @@ You are a software consulting company known as {your cscd01 team name}. You have
 - The system should be able to integrate with external systems like electronic health records (EHRs) and wearable devices.
 - Users should receive notifications of personalized health recommendations based on their data.
 - The app should provide analytical insights based on the user's activity.
+- We expect a daily user count of between 50,000 - 100,000 users.
+- We expect an average concurrent user count of 5000.
 
 ## Mutation
 
@@ -38,7 +40,7 @@ Your TA will assign your group two mutations. A mutation adds or modifies an exi
 
 Given the Kata above and the two mutations received by your TA. Create a solution architecture document. You may assume that your TA's and instructors in this course play the role of employees at Xtra-Health. In your document, list their names and assign them roles (ex. Project manager, executive sponsor, IT support, etc).
 
-Below you will find a template for how this document should be structured.
+Below you will find a template for how this document should be structured. 
 
 ## Grading
 
