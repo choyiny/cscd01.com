@@ -17,7 +17,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
       </div>
 
       <ul class="links">
-        <li><span class="course">CSCD01</span> Fall 2023</li>
+        <li><span class="course">CSCD01</span> Fall 2024</li>
 
         <li *ngFor="let item of navItems">
           <a class="nav-link" [routerLink]="item.path">{{ item.name }}</a>
@@ -42,7 +42,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
     <footer class="noprint">
       <div class="footer-line">
         <p>
-          © 2022 Aleksander Bodurri and Cho Yin Yong. Made with
+          © {{ currentYear }} Aleksander Bodurri and Cho Yin Yong. Made with
           <a href="https://analogjs.org">Analog</a>.
         </p>
       </div>
@@ -172,6 +172,8 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   ],
 })
 export class AppComponent {
+  currentYear = new Date().getFullYear();
+
   navItems = [
     {
       name: 'Home',
@@ -186,8 +188,16 @@ export class AppComponent {
       path: '/work',
     },
     {
+      name: "Resources",
+      path: "/resources",
+    },
+    {
       name: 'Team',
       path: '/team',
+    },
+    {
+      name: "Feedback",
+      path: "#",
     },
   ];
 }

@@ -1,59 +1,46 @@
 /// <reference types="vitest" />
 
-import { defineConfig } from 'vite';
-import analog from '@analogjs/platform';
-import angular from '@analogjs/vite-plugin-angular';
+import { defineConfig } from "vite";
+import analog from "@analogjs/platform";
+import * as fs from "fs";
+
+const lectures = fs.readdirSync("./src/content/lectures");
+const coursework = fs.readdirSync("./src/content/coursework");
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  publicDir: 'src/assets',
+  publicDir: "src/assets",
   build: {
-    target: ['es2020'],
+    target: ["es2020"],
   },
   resolve: {
-    mainFields: ['module'],
+    mainFields: ["module"],
   },
   plugins: [
     analog({
       prerender: {
         routes: async () => [
-          '/',
-          '/lectures',
-          '/lectures/1',
-          '/lectures/2',
-          '/lectures/3',
-          '/lectures/4',
-          '/lectures/5',
-          '/lectures/6',
-          '/lectures/7',
-          '/lectures/8',
-          '/lectures/9',
-          '/lectures/10',
-          '/lectures/11',
-          '/lectures/12',
-          '/work',
-          '/work/team-formation',
-          '/work/group-presentation',
-          '/work/group-assignment',
-          '/work/open-source-project',
-          '/team',
+          "/",
+          "/lectures",
+          ...lectures.map((post) => `/lectures/${post.replace(".md", "")}`),
+          ...coursework.map((post) => `/work/${post.replace(".md", "")}`),
+          "/work",
+          "/team",
+          "/resources",
         ],
         sitemap: {
-          host: 'https://cscd01.com',
+          host: "https://cscd01.com",
         },
       },
-    }),
-    angular({
-      inlineStylesExtension: 'scss',
     }),
   ],
   test: {
     globals: true,
-    environment: 'jsdom',
-    setupFiles: ['src/test.ts'],
-    include: ['**/*.spec.ts'],
+    environment: "jsdom",
+    setupFiles: ["src/test.ts"],
+    include: ["**/*.spec.ts"],
   },
   define: {
-    'import.meta.vitest': mode !== 'production',
+    "import.meta.vitest": mode !== "production",
   },
 }));
