@@ -37,15 +37,15 @@ We encourage you to post questions regarding course materials and assignments on
 you need extended support, the course staff will hold office hours. Please contact course staff via
 Slack direct message, we will not respond to any emails.
 
-|                                      | Office Hours    | Location      |
-| ------------------------------------ | --------------- | ------------- |
-| Cho Yin Yong / Aleksander Bodurri    | Tuesday 7-8pm   | After Lecture |
-| Cho Yin Yong / Aleksander Bodurri    | Thursday 7-8pm  | After Lecture |
-| Ian Gregory                          | TBD             | CS Help Lab   |
-| Esra Kastrati                        | TBD             | CS Help Lab   |
-| Tina Zamiri                          | TBD             | CS Help Lab   |
-| Aditya Kulkarni                      | TBD             | CS Help Lab   |
-| Porom Kamal                          | TBD             | CS Help Lab   |
+|                                   | Office Hours   | Location      |
+| --------------------------------- | -------------- | ------------- |
+| Cho Yin Yong / Aleksander Bodurri | Tuesday 7-8pm  | After Lecture |
+| Cho Yin Yong / Aleksander Bodurri | Thursday 7-8pm | After Lecture |
+| Ian Gregory                       | TBD            | CS Help Lab   |
+| Esra Kastrati                     | TBD            | CS Help Lab   |
+| Tina Zamiri                       | TBD            | CS Help Lab   |
+| Aditya Kulkarni                   | TBD            | CS Help Lab   |
+| Porom Kamal                       | TBD            | CS Help Lab   |
 
 # Course Timing
 

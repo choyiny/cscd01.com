@@ -1,11 +1,11 @@
 ---
 title: Course Resources
 ---
+
 <p>
     Interesting resources that might be useful to you in web development.
     Feel free to make a PR to add to this list!
 </p>
-
 
 # Technical Blogs
 

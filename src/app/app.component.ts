@@ -1,9 +1,9 @@
-import { NgFor } from '@angular/common';
-import { Component } from '@angular/core';
-import { RouterModule, RouterOutlet } from '@angular/router';
+import { NgFor } from "@angular/common";
+import { Component } from "@angular/core";
+import { RouterModule, RouterOutlet } from "@angular/router";
 
 @Component({
-  selector: 'app-root',
+  selector: "app-root",
   standalone: true,
   imports: [RouterOutlet, RouterModule, NgFor],
   template: `
@@ -176,24 +176,24 @@ export class AppComponent {
 
   navItems = [
     {
-      name: 'Home',
-      path: '/',
+      name: "Home",
+      path: "/",
     },
     {
-      name: 'Lectures',
-      path: '/lectures',
+      name: "Lectures",
+      path: "/lectures",
     },
     {
-      name: 'Coursework',
-      path: '/work',
+      name: "Coursework",
+      path: "/work",
     },
     {
       name: "Resources",
       path: "/resources",
     },
     {
-      name: 'Team',
-      path: '/team',
+      name: "Team",
+      path: "/team",
     },
     {
       name: "Feedback",
