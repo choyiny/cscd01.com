@@ -1,8 +1,8 @@
 ---
-title: Group Presentation - Architectural Kata
+title: Group Presentation - Analyzing non-functional requirements
 description: An architectural kata is an exercise that aims to train software architects. In this assignment, you will be given a scenario and you will be asked to design a system that satisfies the requirements of the scenario.
-releaseDate: 2023-10-06
-dueDate: 2023-11-03
+releaseDate: 2024-10-07
+dueDate: 2024-11-04T16:59:59-04:00
 ---
 
 # Overview

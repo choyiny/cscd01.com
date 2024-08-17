@@ -1,9 +1,7 @@
 ---
 title: Group Assignment - Writing a Solution Architecture Document
-releaseDate: 2023-11-13
-dueDate: 2023-11-30T23:59:00.000Z
----
-
+releaseDate: 2024-11-11
+dueDate: 2024-11-28T23:59:00.000Z
 ---
 
 Complex problems tend to require more complex solutions. Large systems are difficult for an individual to keep track of, even the individual who architected it.
@@ -13,8 +11,6 @@ This is why architects create various design and architecture artifacts, so that
 This assignment is a group assignment. Your group will be the same one you've been working with in your tutorial all semester.
 
 ## Scenario
-
----
 
 You are a software consulting company known as {your cscd01 team name}. You have been approached by a startup called Xtra-Health\* based out of Ontario. They want to build an app that can track physical activity and use it in conjunction with a users’ medical records to provide a comprehensive health management platform. Your TA will play the role of project manager for Xtra-health.
 
@@ -30,21 +26,15 @@ You are a software consulting company known as {your cscd01 team name}. You have
 
 ## Mutation
 
----
-
 Your TA will assign your group two mutations. A mutation adds or modifies an existing requirement for the scenario. These will be handed out in your group slack channels. If you have not recieved a mutation, reach out to your TA on slack.
 
 ## Your Task
-
----
 
 Given the Kata above and the two mutations received by your TA. Create a solution architecture document. You may assume that your TA's and instructors in this course play the role of employees at Xtra-Health. In your document, list their names and assign them roles (ex. Project manager, executive sponsor, IT support, etc).
 
 Below you will find a template for how this document should be structured.
 
 ## Grading
-
----
 
 ### 1. **Background (5%)**
 
@@ -93,15 +83,11 @@ See booklit.app example from lecture (week 11).
 
 ## Submission
 
----
-
 Create your solution archicecture documents in a google doc. Once you are finished and ready to hand in your assignment, share it with your TA on slack.
 
 **The deadline for handing in your assignment is November 30th at 11:59 PM.**
 
 ## Important Notes
-
----
 
 - You will not be rewarded for verbosity. This is not an essay. This type of document is meant to be digestible by many stakeholders within multiple companies. Clarity and conciseness are valued more by business folk who have busy jobs.
 - You will be rewarded for providing justification for your decisions. Remember, there is no perfect architecture, but you must be able to make informed and defensible decisions.

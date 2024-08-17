@@ -1,13 +1,13 @@
 ---
 title: Open Source Project - Contributing to langchain
 description: In this assignment, you will be contributing to an open source project called langchain, a library that interfaces with Large Language Models (LLMs) such as GPT-4.
-releaseDate: 2023-09-17
-dueDate: 2023-11-30
+releaseDate: 2024-09-16
+dueDate: 2024-11-28T16:59:59-04:00
 ---
 
 ## Introduction
 
-In recent months, the popularity of ChatGPT has surged and the hype of AI taking over the world has begun (again). ChatGPT, as well as its “smarter” counterpart GPT-4, is known as a “large language model” (LLM). Essentially, it’s trained on a massive amount of data, and at the end of that, it exposes a function, takes 1 string parameter as input (The Prompt), and returns a string as output, which represents the most probable “next characters” of the input.
+In the past few years, the popularity of ChatGPT has surged and the hype of AI taking over the world has begun (again). One of the most used AI tools ChatGPT is powered by what we call a “large language model” (LLM). Essentially, it’s trained on a massive amount of data, and at the end of that, it exposes a function, takes 1 string parameter as input (The Prompt), and returns a string as output, which represents the most probable “next characters” of the input.
 
 Simply put, you can think of the LLM exposing 1 function like this:
 
@@ -15,13 +15,13 @@ Simply put, you can think of the LLM exposing 1 function like this:
 def generate(prompt: str) -> str
 ```
 
-ChatGPT may be one of the most popular, but others such as [Llama](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/), [GPT4All](https://gpt4all.io/index.html), [MPT](https://www.mosaicml.com/blog/mpt-7b) also aim to do the same.
+ChatGPT is one of the most popular cloud hosted LLMs, but there are other cloud hosted LLMs like [Claude AI](https://claude.ai/), Google's [Gemini](https://gemini.google.com/) and more.
 
 More recently, researchers have cleverly utilized this “string input” to empower the LLM to do more than simple Q&A. Some aim to increase the accuracy of the output, to decrease “hallucinations”, and some aim to grant these LLMs “internet access”. Here are some cool examples:
 
 - [ReAct pattern](https://til.simonwillison.net/llms/python-react-pattern)
 - [Multi-agent debate](https://arxiv.org/abs/2305.19118)
-- [Sequential chains](https://python.langchain.com/en/latest/modules/chains/generic/sequential_chains.html)
+- [Building language agents as graphs](https://langchain-ai.github.io/langgraph/)
 
 ## Langchain
 
@@ -29,8 +29,8 @@ Langchain is an abstraction framework that wraps on top of `def generate`. It pr
 
 This semester, you and your team will be contributing to Langchain. There are 2 repositories that you can contribute to depending on which language you favor more:
 
-- https://github.com/hwchase17/langchainjs (Javascript)
-- https://github.com/hwchase17/langchain (Python)
+- https://github.com/langchain-ai/langchainjs (Javascript)
+- https://github.com/langchain-ai/langchain (Python)
 
 ## Identifying and Analyzing the Issue (40%)
 
@@ -38,17 +38,17 @@ This semester, you and your team will be contributing to Langchain. There are 2 
 
 Your team will identify 1-2 issues to work on. Although we will attempt to grade your work on both issues, we will only take the best one for your final grade. You can find outstanding issues here:
 
-- https://github.com/hwchase17/langchain/issues
-- https://github.com/hwchase17/langchainjs/issues
+- https://github.com/langchain-ai/langchain/issues
+- https://github.com/langchain-ai/langchainjs/issues
 
 As a general rule of thumb, consider these issues ineligible for this project.
 
-- [Documentation-only or non-code-related issues](https://github.com/hwchase17/langchain/pull/5563)
-- [Trivial quality-of-life enhancements that do not affect general functionality](https://github.com/hwchase17/langchain/pull/5573)
+- [Documentation-only or non-code-related issues](https://github.com/langchain-ai/langchain/pull/5563)
+- [Trivial quality-of-life enhancements that do not affect general functionality](https://github.com/langchain-ai/langchain/pull/5573)
 
 **Task**: Verify with your TA that your issue satisfies course requirements.
 
-After identifying an issue, you must come up with an intended solution with pseudo-code and outline the files that you may need to change or create. You must include enough detail to convince the TA that the approach is feasible.
+After identifying an issue, you must come up with an intended solution with pseudo-code and outline the files that you may need to change or create. You must include enough detail to convince the TA that the approach is feasible and non-trivial.
 
 **Task**: Show the TA your intended solution along with the files that require to be changed.
 
@@ -56,6 +56,8 @@ You will be graded on the following items:
 
 - Your intended solution
 - Your discussions with the community
+
+You can refer to this [example](https://drive.google.com/file/d/1uk4eD2Q8SlWDFDWgrx1scuKQ2Kg8FRf1/view) for the expectations of analysis and proposal.
 
 ## Pull Request to langchain (40%)
 
@@ -82,12 +84,21 @@ One major part of contributing to the open source is the interaction with the co
 
 Remember you are representing yourself, and the University of Toronto. Please keep your community interactions professional.
 
-If your pull request is merged, either you are lucky, you finished early, or you spent effort in getting yourself noticed. Therefore, you will automatically get 20% for free.
+If your pull request is merged, either you are lucky, you finished early, or you spent effort in getting yourself noticed. Therefore, you will automatically get 20% for free. However, if we see that you have been unprofessional in your interactions, we may deduct points. Unprofessional behavior includes but is not limited to:
 
-If your pull request is not merged, I mostly attribute it to unluckiness. Therefore, you will be graded on the following items:
+- Spamming the maintainers with merge requests
+- Being rude
+- Not following the maintainers' instructions
+- Not following the community guidelines
 
-- Provide sufficient evidence to TA your interaction with the community, such as but not limited to Github and the langchain Discord.
+If your pull request is not merged, I mostly attribute it to unluckiness. However, it is worthy to note that the last time our course contributed to langchain, over 50% of students had their pull requests merged. You will be graded on the following items:
+
+- Provide sufficient evidence to TA your professional and timely interaction with the community, such as but not limited to Github and the langchain Discord.
 - Professionalism in the interaction
+
+Last minute interactions with the community will not be considered as sufficient documentation.
+
+For a good example, refer to https://github.com/langchain-ai/langchain/issues/11229.
 
 ## Bonus (up to 10% of final course grade)
 
