@@ -48,4 +48,4 @@ If you are unsatisfied with the result, please ask the TA to reach out to the co
 
 # Submission
 
-Please submit your team agreeemnt to the Google doc shared to you by the TA by the deadline.
+Please submit your team agreement to the Google doc shared to you by the TA by the deadline.
