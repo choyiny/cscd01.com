@@ -1,8 +1,8 @@
 ---
 title: Team Formation and Team Agreement
 description: 70% of the course is group work. This assignment is to help you form your team and to help you establish a team agreement.
-releaseDate: 2023-09-07
-dueDate: 2023-09-22
+releaseDate: 2024-09-03
+dueDate: 2024-09-20
 ---
 
 # Overview
@@ -19,8 +19,7 @@ You must spend your best effort to form a team of 4 in your tutorial. You are no
 
 After forming a team, create a team name and a private channel between your team and your TA.
 
-To get full credit, you must form your team on or before your third tutorial. Create a team name and a Slack channel between your
-team and your tutorial TA. Introduce yourself to each other.
+To get full credit, you must form your team on or before your third tutorial. Create a team name and a Slack channel between your team and your tutorial TA. Introduce yourself to each other.
 
 # Team Agreement (1%)
 

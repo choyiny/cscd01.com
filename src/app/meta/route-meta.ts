@@ -1,43 +1,43 @@
-import { RouteMeta } from '@analogjs/router';
-import { environment } from '../../environments/environment';
+import { RouteMeta } from "@analogjs/router";
+import { environment } from "../../environments/environment";
 
 export function getMeta(params: { title: string; description: string }) {
   return [
     {
-      property: 'og:title',
+      property: "og:title",
       content: params.title,
     },
     {
-      property: 'og:description',
+      property: "og:description",
       content: params.description,
     },
     {
-      property: 'og:image',
-      content: 'https://cscd01.com/utsc-logo-dark.svg',
+      property: "og:image",
+      content: "https://cscd01.com/utsc-logo-dark.svg",
     },
     {
-      property: 'og:url',
-      content: 'https://cscd01.com',
+      property: "og:url",
+      content: "https://cscd01.com",
     },
     {
-      property: 'og:type',
-      content: 'website',
+      property: "og:type",
+      content: "website",
     },
     {
-      property: 'twitter:card',
-      content: 'summary_large_image',
+      property: "twitter:card",
+      content: "summary_large_image",
     },
     {
-      property: 'twitter:title',
+      property: "twitter:title",
       content: params.title,
     },
     {
-      property: 'twitter:description',
+      property: "twitter:description",
       content: params.description,
     },
     {
-      property: 'twitter:image',
-      content: 'https://cscd01.com/utsc-logo-dark.svg',
+      property: "twitter:image",
+      content: "https://cscd01.com/utsc-logo-dark.svg",
     },
   ];
 }
@@ -47,8 +47,8 @@ export function getRouteMeta(
     | { partialTitle: string; description: string }
     | { title: string; description: string },
 ): RouteMeta {
-  let title = '';
-  if ('partialTitle' in params) {
+  let title = "";
+  if ("partialTitle" in params) {
     title = `${params.partialTitle} - ${environment.courseCode} ${environment.courseTitle}`;
   } else {
     title = params.title;
@@ -56,40 +56,40 @@ export function getRouteMeta(
 
   const meta = [
     {
-      property: 'og:title',
+      property: "og:title",
       content: title,
     },
     {
-      property: 'og:description',
+      property: "og:description",
       content: params.description,
     },
     {
-      property: 'og:image',
-      content: 'https://cscd01.com/utsc-logo-dark.svg',
+      property: "og:image",
+      content: "https://cscd01.com/utsc-logo-dark.svg",
     },
     {
-      property: 'og:url',
-      content: 'https://cscd01.com',
+      property: "og:url",
+      content: "https://cscd01.com",
     },
     {
-      property: 'og:type',
-      content: 'website',
+      property: "og:type",
+      content: "website",
     },
     {
-      property: 'twitter:card',
-      content: 'summary_large_image',
+      property: "twitter:card",
+      content: "summary_large_image",
     },
     {
-      property: 'twitter:title',
+      property: "twitter:title",
       content: title,
     },
     {
-      property: 'twitter:description',
+      property: "twitter:description",
       content: params.description,
     },
     {
-      property: 'twitter:image',
-      content: 'https://cscd01.com/utsc-logo-dark.svg',
+      property: "twitter:image",
+      content: "https://cscd01.com/utsc-logo-dark.svg",
     },
   ];
 

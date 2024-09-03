@@ -1,9 +1,10 @@
-import { NgFor } from '@angular/common';
-import { Component } from '@angular/core';
-import { RouterModule, RouterOutlet } from '@angular/router';
+import { NgFor } from "@angular/common";
+import { Component } from "@angular/core";
+import { RouterModule, RouterOutlet } from "@angular/router";
+import { environment } from "../environments/environment";
 
 @Component({
-  selector: 'app-root',
+  selector: "app-root",
   standalone: true,
   imports: [RouterOutlet, RouterModule, NgFor],
   template: `
@@ -17,20 +18,32 @@ import { RouterModule, RouterOutlet } from '@angular/router';
       </div>
 
       <ul class="links">
-        <li><span class="course">CSCD01</span> Fall 2023</li>
-
-        <li *ngFor="let item of navItems">
-          <a class="nav-link" [routerLink]="item.path">{{ item.name }}</a>
+        <li>
+          <span class="course">{{ courseCode }}</span> {{ semester }}
         </li>
+
+        @for (item of navItems; track item) {
+          <li>
+            @if (item.path.startsWith("http")) {
+              <a class="nav-link" href="{{ item.path }}" target="_blank">{{
+                item.name
+              }}</a>
+            } @else {
+              <a class="nav-link" [routerLink]="item.path">{{ item.name }}</a>
+            }
+          </li>
+        }
       </ul>
     </nav>
 
     <div>
       <div class="collapse hidden" #collapse>
         <ul class="links">
-          <li *ngFor="let item of navItems">
-            <a class="nav-link" [routerLink]="item.path">{{ item.name }}</a>
-          </li>
+          @for (item of navItems; track item) {
+            <li>
+              <a class="nav-link" [routerLink]="item.path">{{ item.name }}</a>
+            </li>
+          }
         </ul>
       </div>
     </div>
@@ -42,7 +55,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
     <footer class="noprint">
       <div class="footer-line">
         <p>
-          © 2022 Aleksander Bodurri and Cho Yin Yong. Made with
+          © 2024 Cho Yin Yong. Made with
           <a href="https://analogjs.org">Analog</a>.
         </p>
       </div>
@@ -172,22 +185,35 @@ import { RouterModule, RouterOutlet } from '@angular/router';
   ],
 })
 export class AppComponent {
+  currentYear = new Date().getFullYear();
+
   navItems = [
     {
-      name: 'Home',
-      path: '/',
+      name: "Home",
+      path: "/",
     },
     {
-      name: 'Lectures',
-      path: '/lectures',
+      name: "Lectures",
+      path: "/lectures",
     },
     {
-      name: 'Coursework',
-      path: '/work',
+      name: "Coursework",
+      path: "/work",
     },
     {
-      name: 'Team',
-      path: '/team',
+      name: "Resources",
+      path: "/resources",
+    },
+    {
+      name: "Team",
+      path: "/team",
+    },
+    {
+      name: "Feedback",
+      path: "https://forms.gle/8jLHwvrxb5chDTgx6",
     },
   ];
+
+  courseCode = environment.courseCode;
+  semester = environment.semester;
 }

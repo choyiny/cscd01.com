@@ -2,16 +2,16 @@ import {
   ContentFile,
   MarkdownComponent,
   injectContent,
-} from '@analogjs/content';
-import { Component, inject } from '@angular/core';
-import { CourseworkAttributes } from '../interfaces/file-attributes';
-import { AsyncPipe, NgIf } from '@angular/common';
-import { Meta, Title } from '@angular/platform-browser';
-import { getMeta } from '../meta/route-meta';
+} from "@analogjs/content";
+import { Component, inject } from "@angular/core";
+import { CourseworkAttributes } from "../interfaces/file-attributes";
+import { AsyncPipe, DatePipe } from "@angular/common";
+import { Meta, Title } from "@angular/platform-browser";
+import { getMeta } from "../meta/route-meta";
 
 @Component({
   standalone: true,
-  imports: [MarkdownComponent, AsyncPipe, NgIf],
+  imports: [MarkdownComponent, AsyncPipe, DatePipe],
   styles: [
     `
       .container {
@@ -25,11 +25,12 @@ import { getMeta } from '../meta/route-meta';
   ],
   template: `
     <div class="container">
-      <ng-container *ngIf="handout">
+      @if (handout) {
         <h1>{{ handout.attributes.title }}</h1>
         <p>{{ handout.attributes.description }}</p>
+        <p>Due Date: {{ handout.attributes.dueDate | date: "medium" }}</p>
         <analog-markdown [content]="handout.content"></analog-markdown>
-      </ng-container>
+      }
     </div>
   `,
 })
@@ -42,8 +43,8 @@ export default class CourseworkComponent {
 
   constructor() {
     injectContent<CourseworkAttributes>({
-      param: 'slug',
-      subdirectory: 'coursework',
+      param: "slug",
+      subdirectory: "coursework",
     }).subscribe((handout) => {
       this.setHandout(handout);
     });

@@ -1,21 +1,21 @@
-import { Component, Input } from '@angular/core';
-import { CourseworkAttributes } from '../interfaces/file-attributes';
-import { ContentFile, injectContentFiles } from '@analogjs/content';
-import { NgFor, NgIf } from '@angular/common';
-import { RouterLink } from '@angular/router';
-import { RouteMeta } from '@analogjs/router';
-import { getRouteMeta } from '../meta/route-meta';
-import { environment } from '../../environments/environment';
+import { Component, Input } from "@angular/core";
+import { CourseworkAttributes } from "../interfaces/file-attributes";
+import { ContentFile, injectContentFiles } from "@analogjs/content";
+
+import { RouterLink } from "@angular/router";
+import { RouteMeta } from "@analogjs/router";
+import { getRouteMeta } from "../meta/route-meta";
+import { environment } from "../../environments/environment";
 
 export const routeMeta: RouteMeta = getRouteMeta({
-  partialTitle: 'Coursework',
+  partialTitle: "Coursework",
   description: `Coursework for ${environment.courseCode} ${environment.courseTitle}`,
 });
 
 @Component({
   standalone: true,
-  imports: [NgIf, RouterLink],
-  selector: 'app-coursework-item',
+  imports: [RouterLink],
+  selector: "app-coursework-item",
   styles: [
     `
       .work-item {
@@ -58,29 +58,34 @@ export const routeMeta: RouteMeta = getRouteMeta({
     `,
   ],
   template: `
-    <a
-      [routerLink]="isReleased() ? '/work/' + work.slug : []"
-      class="work-item"
-      *ngIf="work"
-      [class]="{ disabled: !isReleased() }"
-    >
-      <div class="work-details">
-        <div class="work-title">{{ work.attributes.title }}</div>
-        <div class="work-date" *ngIf="isReleased()">
-          Due on {{ getDateString(work.attributes.dueDate) }}
+    @if (work) {
+      <a
+        [routerLink]="isReleased() ? '/work/' + work.slug : null"
+        class="work-item"
+        [class]="{ disabled: !isReleased() }"
+      >
+        <div class="work-details">
+          <div class="work-title">{{ work.attributes.title }}</div>
+          @if (isReleased()) {
+            <div class="work-date">
+              Due on {{ getDateString(work.attributes.dueDate) }}
+            </div>
+          }
+          @if (!isReleased()) {
+            <div class="work-date">Coming Soon</div>
+          }
         </div>
-        <div class="work-date" *ngIf="!isReleased()">Coming Soon</div>
-      </div>
-    </a>
+      </a>
+    }
   `,
 })
 class CourseworkItemComponent {
   @Input() work: ContentFile<CourseworkAttributes> | undefined = undefined;
 
   getDateString(date: Date) {
-    return new Date(date).toLocaleString('en-US', {
-      month: 'long',
-      day: 'numeric',
+    return new Date(date).toLocaleString("en-US", {
+      month: "long",
+      day: "numeric",
     });
   }
 
@@ -98,7 +103,7 @@ class CourseworkItemComponent {
 
 @Component({
   standalone: true,
-  imports: [NgFor, CourseworkItemComponent],
+  imports: [CourseworkItemComponent],
   styles: [
     `
       .container {
@@ -115,10 +120,9 @@ class CourseworkItemComponent {
   template: `
     <div class="container">
       <h1>Coursework</h1>
-      <app-coursework-item
-        *ngFor="let coursework of courseworkList"
-        [work]="coursework"
-      ></app-coursework-item>
+      @for (coursework of courseworkList; track coursework) {
+        <app-coursework-item [work]="coursework"></app-coursework-item>
+      }
     </div>
   `,
 })
@@ -126,13 +130,13 @@ export default class WorkPage {
   readonly courseworkList = injectContentFiles<CourseworkAttributes>(
     (contentFile) => {
       const isCoursework = contentFile.filename.includes(
-        '/src/content/coursework',
+        "/src/content/coursework",
       );
       return isCoursework;
     },
   ).sort((a, b) => {
-    const aDate = new Date(a.attributes.releaseDate);
-    const bDate = new Date(b.attributes.releaseDate);
+    const aDate = new Date(a.attributes.dueDate);
+    const bDate = new Date(b.attributes.dueDate);
     return aDate.getTime() - bDate.getTime();
   });
 }

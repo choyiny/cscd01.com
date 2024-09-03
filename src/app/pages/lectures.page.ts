@@ -1,21 +1,21 @@
-import { injectContentFiles } from '@analogjs/content';
-import { Component, Input } from '@angular/core';
-import { LectureAttributes } from '../interfaces/file-attributes';
-import { NgFor, NgIf } from '@angular/common';
-import { RouterLink } from '@angular/router';
-import { RouteMeta } from '@analogjs/router';
-import { getRouteMeta } from '../meta/route-meta';
-import { environment } from '../../environments/environment';
+import { injectContentFiles } from "@analogjs/content";
+import { Component, Input } from "@angular/core";
+import { LectureAttributes } from "../interfaces/file-attributes";
+
+import { RouterLink } from "@angular/router";
+import { RouteMeta } from "@analogjs/router";
+import { getRouteMeta } from "../meta/route-meta";
+import { environment } from "../../environments/environment";
 
 export const routeMeta: RouteMeta = getRouteMeta({
-  partialTitle: 'Schedule',
+  partialTitle: "Schedule",
   description: `Lecture Schedule for ${environment.courseCode} ${environment.courseTitle}`,
 });
 
 @Component({
   standalone: true,
-  imports: [NgIf, RouterLink],
-  selector: 'app-lecture-item',
+  imports: [RouterLink],
+  selector: "app-lecture-item",
   styles: [
     `
       .lecture-item {
@@ -62,52 +62,41 @@ export const routeMeta: RouteMeta = getRouteMeta({
     `,
   ],
   template: `
-    <a
-      [routerLink]="'/lectures/' + lecture.slug"
-      class="lecture-item"
-      *ngIf="lecture"
-    >
-      <div class="lecture-number">
-        <span>{{ lecture.attributes.week }}</span>
-      </div>
-      <div class="lecture-details">
-        <div class="lecture-title">{{ lecture.attributes.title }}</div>
-        <div class="lecture-date">
-          Week of {{ getDateString(lecture.attributes.date) }}
+    @if (lecture) {
+      <a [routerLink]="'/lectures/' + lecture.slug" class="lecture-item">
+        <div class="lecture-number">
+          <span>{{ lecture.attributes.week }}</span>
         </div>
-        <div class="lecture-description">
-          {{ lecture.attributes.description }}
+        <div class="lecture-details">
+          <div class="lecture-title">{{ lecture.attributes.title }}</div>
+          <div class="lecture-date">
+            Week of {{ getDateString(lecture.attributes.date) }}
+          </div>
+          <div class="lecture-description">
+            {{ lecture.attributes.description }}
+          </div>
         </div>
-      </div>
-    </a>
+      </a>
+    }
   `,
 })
 class LectureItemComponent {
   @Input() lecture: LectureAttributes | undefined = undefined;
 
   getDateString(date: Date) {
-    return new Date(date).toLocaleString('en-US', {
-      month: 'long',
-      day: 'numeric',
+    return new Date(date).toLocaleString("en-US", {
+      month: "long",
+      day: "numeric",
+      timeZone: "UTC",
     });
   }
 }
 
 @Component({
   standalone: true,
-  imports: [NgFor, LectureItemComponent],
+  imports: [LectureItemComponent],
   styles: [
     `
-      .container {
-        margin-top: 3em;
-      }
-
-      h1 {
-        font-size: 30px;
-        text-align: center;
-        margin-bottom: 2em;
-      }
-
       .lecture-container {
         margin-bottom: 1em;
       }
@@ -115,17 +104,19 @@ class LectureItemComponent {
   ],
   template: `
     <div class="container">
-      <h1>Schedule</h1>
+      <header>
+        <h1>Schedule</h1>
+      </header>
       <div class="lecture-container">
-        <ng-container *ngFor="let lecture of lectures">
+        @for (lecture of lectures; track lecture) {
           <app-lecture-item [lecture]="lecture"></app-lecture-item>
-        </ng-container>
+        }
       </div>
     </div>
   `,
 })
 export default class SchedulePage {
   readonly lectures = injectContentFiles<LectureAttributes>((contentFile) =>
-    contentFile.filename.includes('/src/content/lectures/'),
+    contentFile.filename.includes("/src/content/lectures/"),
   ).sort((a, b) => a.attributes.week - b.attributes.week);
 }
