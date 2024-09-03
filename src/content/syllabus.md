@@ -34,15 +34,15 @@ For specific prerequisite requirements see the [UTSC Calendar](https://utsc.cale
 
 We encourage you to post questions regarding course materials and assignments on Slack. However, if you need extended support, the course staff will hold office hours. Please contact course staff via Slack direct message, we will not respond to any emails.
 
-|                                   | Office Hours   | Location      |
-| --------------------------------- | -------------- | ------------- |
-| Cho Yin Yong / Aleksander Bodurri | Tuesday 7-8pm  | After Lecture |
-| Cho Yin Yong / Aleksander Bodurri | Thursday 7-8pm | After Lecture |
-| Ian Gregory                       | TBD            | CS Help Lab   |
-| Esra Kastrati                     | TBD            | CS Help Lab   |
-| Tina Zamiri                       | TBD            | CS Help Lab   |
-| Aditya Kulkarni                   | TBD            | CS Help Lab   |
-| Porom Kamal                       | TBD            | CS Help Lab   |
+|                                   | Office Hours    | Location      |
+| --------------------------------- | --------------- | ------------- |
+| Cho Yin Yong / Aleksander Bodurri | Tuesday 7-8pm   | After Lecture |
+| Cho Yin Yong / Aleksander Bodurri | Thursday 7-8pm  | After Lecture |
+| Ian Gregory                       | Thursday 4-5pm  | CS Help Lab   |
+| Esra Kastrati                     | Wednesday 8-9pm | CS Help Lab   |
+| Tina Zamiri                       | Tuesday 2-3pm   | CS Help Lab   |
+| Aditya Kulkarni                   | Friday 5-6pm    | CS Help Lab   |
+| Porom Kamal                       | Wednesday 7-8pm | CS Help Lab   |
 
 # Course Timing
 
@@ -50,11 +50,11 @@ We encourage you to post questions regarding course materials and assignments on
 | ------- | --------------- | ------------------ | --------------------------------- |
 | LEC01   | Tuesday 5-7pm   | Available on ACORN | Cho Yin Yong / Aleksander Bodurri |
 | LEC02   | Thursday 5-7pm  | Available on ACORN | Cho Yin Yong / Aleksander Bodurri |
-| TUT0001 | Wednesday 7-8pm | Available on ACORN | TBD                               |
-| TUT0002 | Friday 2-3pm    | Available on ACORN | TBD                               |
-| TUT0004 | Wednesday 4-5pm | Available on ACORN | TBD                               |
-| TUT0005 | Tuesday 7-8pm   | Available on ACORN | TBD                               |
-| TUT0006 | Tuesday 4-5pm   | Available on ACORN | TBD                               |
+| TUT0001 | Wednesday 7-8pm | Available on ACORN | Esra Kastrati                     |
+| TUT0002 | Friday 2-3pm    | Available on ACORN | Ian Gregory                       |
+| TUT0003 | Wednesday 4-5pm | Available on ACORN | Aditya Kulkarni                   |
+| TUT0004 | Tuesday 7-8pm   | Available on ACORN | Porom Kamal                       |
+| TUT0005 | Tuesday 4-5pm   | Available on ACORN | Tina Zamiri                       |
 
 # Course Information
 
