@@ -30,7 +30,7 @@ Your team agreement should cover how the contribution factor should be affected 
 - When a team member is unreachable or unresponsive (please specify the response times clearly)
 - When a team member misses a scheduled meeting
 - When a team member drops out
-- When a team member is unable to complete his part of the activity
+- When a team member is unable to complete their part of the activity
 
 Your team agreement can also optionally contain other situations in which the contribution factor is affected. This is up to the discretion of the team.
 
@@ -38,7 +38,7 @@ To get full credit, your team agreement must be signed by all team members by th
 
 # Arbitration with TA
 
-Although rare, sometimes, team members are not able to work with each other due to various reasons. At any time, if any member feels like the team agreement should be enforced, he should set up a private meeting with the TA to discuss the matter.
+Although rare, sometimes, team members are not able to work with each other due to various reasons. At any time, if any member feels like the team agreement should be enforced, they should set up a private meeting with the TA to discuss the matter.
 
 Please raise this issue only as a last resort.
 
@@ -48,4 +48,4 @@ If you are unsatisfied with the result, please ask the TA to reach out to the co
 
 # Submission
 
-Please submit your team agreeemnt to the Google doc shared to you by the TA by the deadline.
+Please submit your team agreement to the Google doc shared to you by the TA by the deadline.
