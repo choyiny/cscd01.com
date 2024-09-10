@@ -140,3 +140,7 @@ hr {
   height: 1px;
   background: currentColor;
 }
+
+p img {
+  max-width: 100%;
+}

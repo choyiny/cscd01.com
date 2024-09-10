@@ -1,18 +1,24 @@
 ---
-title: Open Source Project - Contributing to langchain
-description: In this assignment, you will be contributing to an open source project called langchain, a library that interfaces with Large Language Models (LLMs) such as GPT-4.
+title: Open Source Project - "Implementation / Testing"
+description: In this project, we will be working with a large codebase to test your implementation and testing skills from the SDLC. You will be contributing to a chosen open source project, and your professionalism, progress, communication, and implementation will be graded.
 releaseDate: 2024-09-16
 dueDate: 2024-11-28T16:59:59-04:00
 ---
 
 ## Introduction
 
-In the past few years, the popularity of ChatGPT has surged and the hype of AI taking over the world has begun (again). One of the most used AI tools ChatGPT is powered by what we call a “large language model” (LLM). Essentially, it’s trained on a massive amount of data, and at the end of that, it exposes a function, takes 1 string parameter as input (The Prompt), and returns a string as output, which represents the most probable “next characters” of the input.
+In the past few years, the popularity of ChatGPT has surged and the hype of AI taking over the world has begun (again). One of the most used AI tools ChatGPT is powered by what we call a “large language model” (LLM). An LLM is a model that takes a string input and outputs a string.
+
+You can watch more about the technical implementation of LLMs in a series of videos by 3blue1brown:
+
+- [But what is a GPT? Visual intro to transformers | Chapter 5, Deep Learning](https://www.youtube.com/watch?v=wjZofJX0v4M&t=1s)
+- [Attention in transformers, visually explained | Chapter 6, Deep Learning](https://www.youtube.com/watch?v=eMlx5fFNoYc&t=3s)
+- [How might LLMs store facts | Chapter 7, Deep Learning](https://www.youtube.com/watch?v=9-Jl0dxWQs8&t=710s)
 
 Simply put, you can think of the LLM exposing 1 function like this:
 
 ```
-def generate(prompt: str) -> str
+def invoke(prompt: str) -> str
 ```
 
 ChatGPT is one of the most popular cloud hosted LLMs, but there are other cloud hosted LLMs like [Claude AI](https://claude.ai/), Google's [Gemini](https://gemini.google.com/) and more.
@@ -25,12 +31,16 @@ More recently, researchers have cleverly utilized this “string input” to emp
 
 ## Langchain
 
-Langchain is an abstraction framework that wraps on top of `def generate`. It provides helpers to format the input, and helpers to parse the output. It also provides helpers to run functions sequentially or even in parallel with a merge.
+Langchain is an abstraction framework that wraps on top of `def invoke`. It provides helpers to format the input, and helpers to parse the output. It also provides helpers to run functions sequentially or even in parallel with a merge. We will be covering how to read large codebases
+in lecture 2.
 
-This semester, you and your team will be contributing to Langchain. There are 2 repositories that you can contribute to depending on which language you favor more:
+![Langchain](langchain.png)
+
+This semester, you and your team will be contributing to Langchain. There are 3 repositories that you can contribute to depending on which language you favor more:
 
 - https://github.com/langchain-ai/langchainjs (Javascript)
 - https://github.com/langchain-ai/langchain (Python)
+- https://github.com/langchain-ai/langgraph (Python)
 
 ## Identifying and Analyzing the Issue (40%)
 
@@ -40,6 +50,7 @@ Your team will identify 1-2 issues to work on. Although we will attempt to grade
 
 - https://github.com/langchain-ai/langchain/issues
 - https://github.com/langchain-ai/langchainjs/issues
+- https://github.com/langchain-ai/langgraph/issues
 
 As a general rule of thumb, consider these issues ineligible for this project.
 
@@ -48,9 +59,13 @@ As a general rule of thumb, consider these issues ineligible for this project.
 
 **Task**: Verify with your TA that your issue satisfies course requirements.
 
-After identifying an issue, you must come up with an intended solution with pseudo-code and outline the files that you may need to change or create. You must include enough detail to convince the TA that the approach is feasible and non-trivial.
+You should take a look at the new [review process](https://python.langchain.com/v0.2/docs/contributing/review_process/) by langchain.
 
-**Task**: Show the TA your intended solution along with the files that require to be changed.
+As reference, you can check out what [pull requests](/showcase) have been made by other students in the past.
+
+After identifying an issue, you must come up with an intended solution with pseudo-code and outline the files that you may need to change or create. You must include enough detail to convince the TA that the approach is feasible and non-trivial. Furthermore, you should discuss your intended solution with the community to get feedback. Please include screenshots of your discussions in your submission.
+
+**Task**: Submit an implementation plan to the TA on the Google Doc provided.
 
 You will be graded on the following items:
 
@@ -71,7 +86,8 @@ You will be graded on the following items:
 
 - Pull request documentation
 - Git best practices
-- Actual Implementation
+- Implementation
+- Testing methods
 - Possibility of PR being merged
 
 It may be possible that the maintainers will tell you that your PR is not mergeable due to various reasons. This is why you would want to choose multiple issues to work on at the beginning.
@@ -84,14 +100,15 @@ One major part of contributing to the open source is the interaction with the co
 
 Remember you are representing yourself, and the University of Toronto. Please keep your community interactions professional.
 
-If your pull request is merged, either you are lucky, you finished early, or you spent effort in getting yourself noticed. Therefore, you will automatically get 20% for free. However, if we see that you have been unprofessional in your interactions, we may deduct points. Unprofessional behavior includes but is not limited to:
+If your pull request is merged, either you are lucky, you finished early, or you spent effort in getting yourself noticed. Therefore, you will automatically get 20% for free. However, if we see that you have been unprofessional in your interactions, we may deduct marks. Unprofessional behavior includes but is not limited to:
 
 - Spamming the maintainers with merge requests
 - Being rude
 - Not following the maintainers' instructions
 - Not following the community guidelines
 
-If your pull request is not merged, I mostly attribute it to unluckiness. However, it is worthy to note that the last time our course contributed to langchain, over 50% of students had their pull requests merged. You will be graded on the following items:
+If your pull request is not merged, I mostly attribute it to unluckiness. However, you may still
+be eligible to get full marks if you can demonstrate the following:
 
 - Provide sufficient evidence to TA your professional and timely interaction with the community, such as but not limited to Github and the langchain Discord.
 - Professionalism in the interaction
@@ -104,7 +121,7 @@ For a good example, refer to https://github.com/langchain-ai/langchain/issues/11
 
 Unless otherwise stated in the team agreement, all members will be given a bonus from 1%-10% (depending on effort required to develop the solution) given that your pull request is merged by the maintainers.
 
-The percentage bonus is determined solely by the course instructors. If your pull request is merged after the course ends, we will retroactively modify your grade.
+The percentage bonus is determined solely by the course instructors. If your pull request is merged after the course ends (up to a period of 1 year), we will retroactively modify your grade.
 
 ## Contribution Factor
 
