@@ -55,6 +55,7 @@ We encourage you to post questions regarding course materials and assignments on
 | TUT0003 | Wednesday 4-5pm | Available on ACORN | Aditya Kulkarni                   |
 | TUT0004 | Tuesday 7-8pm   | Available on ACORN | Porom Kamal                       |
 | TUT0005 | Tuesday 4-5pm   | Available on ACORN | Tina Zamiri                       |
+| TUT0006 | Tuesday 8-9pm   | Available on ACORN | TBD                               |
 
 # Course Information
 
