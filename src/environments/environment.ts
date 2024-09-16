@@ -49,6 +49,14 @@ export const environment = {
           name: "Esra Kastrati",
           title: "Full Stack Software Developer, Verto Health",
         },
+        {
+          name: "Ahmed Halat",
+          title: "Full Stack Software Developer II, Verto Health",
+        },
+        {
+          name: "Mohamed Halat",
+          title: "Full Stack Software Developer II, Verto Health",
+        },
       ],
     },
   ],
