@@ -43,6 +43,7 @@ We encourage you to post questions regarding course materials and assignments on
 | Tina Zamiri                       | Tuesday 2-3pm   | CS Help Lab   |
 | Aditya Kulkarni                   | Friday 5-6pm    | CS Help Lab   |
 | Porom Kamal                       | Wednesday 7-8pm | CS Help Lab   |
+| Ahmed Halat / Mohamed Halat       | Monday 6-7pm    | CS Help Lab   |
 
 # Course Timing
 
