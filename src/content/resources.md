@@ -15,3 +15,9 @@ Looking at how other people do things in the industry is one of the best ways to
 - [StackOverflow](https://stackoverflow.blog/engineering/)
 - [Netflix Tech Blog](https://netflixtechblog.com)
 - [Slack Engineering](https://slack.engineering/)
+
+# LangChain
+
+We have a <a href="/CSCD01-Langchain-Sandbox.ipynb" download>lab for LangChain</a>, which should introduce you to the library in preparation for your open source contribution. It's not for marks, but try it for your own sake—you'll probably learn something!
+
+You will need a Jupyter environment. If you don't have one set up, you can use [UofT's JupyterHub environment](https://jupyter.utoronto.ca/hub/user-redirect/tree) in your browser. The lab is likely too long to finish in tutorial. If you end up with questions after your tutorial is over, ask a TA in office hours.
