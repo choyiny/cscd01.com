@@ -26,19 +26,20 @@ export const environment = {
       members: [
         {
           name: "Ian Gregory",
-          title: "Full Stack Developer, Public Services and Procurement Canada | programming languages enthusiast!"
+          title:
+            "Full Stack Developer, Public Services and Procurement Canada | programming languages enthusiast!",
         },
         {
           name: "Tina Zamiri",
-          title: "5th Year CS + Linguistics minor | Ex SWE Intern, Microsoft"
+          title: "5th Year CS + Linguistics minor | Ex SWE Intern, Microsoft",
         },
         {
           name: "Porom Kamal",
-          title: "4th Year CS | SWE Intern, Shopify"
+          title: "4th Year CS | SWE Intern, Shopify",
         },
         {
           name: "Aditya Kulkarni",
-          title: "Founder, FinLearn | TA, UofT | TA, Data Sciences Institute"
+          title: "Founder, FinLearn | TA, UofT | TA, Data Sciences Institute",
         },
       ],
     },
