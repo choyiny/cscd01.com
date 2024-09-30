@@ -1,8 +1,8 @@
 ---
 title: Group Presentation - Architecture Review Board
-description: TBD.
+description: You will report to an Architecture Review Board (ARB) on your requirements engineering findings.
 releaseDate: 2024-09-30
-dueDate: 2024-11-04T16:59:59-04:00
+dueDate: 2024-10-18T20:59:59-04:00
 ---
 
 ## Introduction
@@ -20,6 +20,8 @@ do not share this with anyone outside of your team.
 
 ## Part 1: Requirements Engineering (10%)
 
+Due Date: Meeting must be done by October 11th
+
 To determine the necessary non-functional requirements and come to a place to make informed decisions about associated tradeoffs, you must perform requirement engineering.
 
 In this part, you must schedule a 15-minute meeting with your TA to ask questions about the scenario. The goal of this meeting is to obtain enough information so that you can make informed decisions without any assumptions.
@@ -29,6 +31,8 @@ Although you may be inclined to assume certain things about the scenario, it is 
 Each person must have an equal speaking opportunity.
 
 ## Part 2: Architecture Review Board (10%)
+
+Due Date: Meeting must be done by October 18th
 
 After collecting the information you need in Part 1 and making decisions as a team, you must schedule a 15-minute ARB meeting with your TA.
 
@@ -42,7 +46,9 @@ At the minimum, you must cover the following (10 minutes):
 - Strategy in rolling out the next release
 - Any additional NFR considerations
 
-Hint: None of your content must be based on your assumptions. It must be backed by what you do in Part 1. How you do in Part 1 will significantly affect your mark in Part 2.
+Hint 1: None of your content must be based on your assumptions. It must be backed by what you do in Part 1. How you do in Part 1 will significantly affect your mark in Part 2.
+
+Hint 2: Think of the personas involved for each of the questions above. For example, in load estimation, would 2 personas have different access patterns?
 
 Each person must have an equal speaking opportunity.
 
