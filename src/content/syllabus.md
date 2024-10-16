@@ -104,7 +104,7 @@ If a piece of work has been mis-marked or if you believe the rubric used to eval
 
 # Academic Integrity
 
-The University treats cases of cheating and plagiarism very seriously. The University of Toronto's Code of Behaviour on Academic Matters (http://www.governingcouncil.utoronto.ca/policies/behaveac.htm) outlines the behaviours that constitute academic dishonesty and the processes for addressing academic offences.
+The University treats cases of cheating and plagiarism very seriously. The [University of Toronto's Code of Behaviour on Academic Matters](http://www.governingcouncil.utoronto.ca/policies/behaveac.htm) outlines the behaviours that constitute academic dishonesty and the processes for addressing academic offences.
 
 For group work, you are fully responsible for the piece of work you submit to the team project as your contribution to the group work.
 

@@ -55,7 +55,7 @@ import { environment } from "../environments/environment";
     <footer class="noprint">
       <div class="footer-line">
         <p>
-          © 2024 Cho Yin Yong. Made with
+          © 2024 Cho Yin Yong and Aleksander Bodurri. Made with
           <a href="https://analogjs.org">Analog</a>.
         </p>
       </div>
@@ -120,9 +120,9 @@ import { environment } from "../environments/environment";
         width: 100%;
         border-bottom: 1px solid #171923;
 
-        ul {
-          @media screen and (max-width: 48em) {
-            display: none;
+        ul li:not(:first-child) {
+          @media screen and (max-width: 767px) {
+            display: none !important;
           }
         }
       }
@@ -158,9 +158,15 @@ import { environment } from "../environments/environment";
         margin: 0;
       }
 
-      @media (max-width: 768px) {
+      @media (max-width: 767px) {
         main {
           max-width: 90%;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .collapse {
+          display: none;
         }
       }
 
