@@ -1,7 +1,7 @@
 ---
 title: Group Assignment - Solution Architecture Document
 releaseDate: 2024-11-04
-dueDate: 2024-11-25T23:59:00.000Z
+dueDate: 2024-11-26T04:59:00.000Z
 ---
 
 ## **Overview**
