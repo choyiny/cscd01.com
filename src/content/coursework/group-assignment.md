@@ -72,6 +72,7 @@ Create your solution archicecture documents in a google doc. Once you are finish
 
 ## Important Notes
 
+- This is supposed to be a professional document. Do not submit anything you wouldn't feel comfortable presenting to your boss/manager/colleague/client. You will lose marks for overt violations of professionalism (use of slang, excessive typos, improperly titled sections, etc.)
 - You will not be rewarded for verbosity. This is not an essay. This type of document is meant to be digestible by many stakeholders within multiple companies. Clarity and conciseness are valued more by business folk who have busy jobs.
 - You will be rewarded for providing justification for your decisions. Remember, there is no perfect architecture, but you must be able to make informed and defensible decisions.
 
