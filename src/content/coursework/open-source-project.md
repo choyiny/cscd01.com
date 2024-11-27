@@ -2,7 +2,7 @@
 title: Open Source Project - "Implementation / Testing"
 description: In this project, we will be working with a large codebase to test your implementation and testing skills from the SDLC. You will be contributing to a chosen open source project, and your professionalism, progress, communication, and implementation will be graded.
 releaseDate: 2024-09-16
-dueDate: 2024-11-28T16:59:59-04:00
+dueDate: 2024-11-30T16:59:59-04:00
 ---
 
 ## Introduction
