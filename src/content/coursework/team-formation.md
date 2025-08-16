@@ -1,8 +1,8 @@
 ---
 title: Team Formation and Team Agreement
 description: 70% of the course is group work. This assignment is to help you form your team and to help you establish a team agreement.
-releaseDate: 2024-09-03
-dueDate: 2024-09-20
+releaseDate: 2025-09-02
+dueDate: 2025-09-16
 ---
 
 # Overview

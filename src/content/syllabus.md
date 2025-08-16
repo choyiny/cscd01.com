@@ -38,25 +38,19 @@ We encourage you to post questions regarding course materials and assignments on
 | --------------------------------- | --------------- | ------------- |
 | Cho Yin Yong / Aleksander Bodurri | Tuesday 7-8pm   | After Lecture |
 | Cho Yin Yong / Aleksander Bodurri | Thursday 7-8pm  | After Lecture |
-| Ian Gregory                       | Thursday 4-5pm  | CS Help Lab   |
-| Esra Kastrati                     | Wednesday 8-9pm | CS Help Lab   |
-| Tina Zamiri                       | Tuesday 2-3pm   | CS Help Lab   |
-| Aditya Kulkarni                   | Friday 5-6pm    | CS Help Lab   |
-| Porom Kamal                       | Wednesday 7-8pm | CS Help Lab   |
-| Ahmed Halat / Mohamed Halat       | Monday 6-7pm    | CS Help Lab   |
 
 # Course Timing
 
-|         | Time            | Location           | Instructor                        |
-| ------- | --------------- | ------------------ | --------------------------------- |
-| LEC01   | Tuesday 5-7pm   | Available on ACORN | Cho Yin Yong / Aleksander Bodurri |
-| LEC02   | Thursday 5-7pm  | Available on ACORN | Cho Yin Yong / Aleksander Bodurri |
-| TUT0001 | Wednesday 7-8pm | Available on ACORN | Esra Kastrati                     |
-| TUT0002 | Friday 2-3pm    | Available on ACORN | Ian Gregory                       |
-| TUT0003 | Wednesday 4-5pm | Available on ACORN | Aditya Kulkarni                   |
-| TUT0004 | Tuesday 7-8pm   | Available on ACORN | Porom Kamal                       |
-| TUT0005 | Tuesday 4-5pm   | Available on ACORN | Tina Zamiri                       |
-| TUT0006 | Tuesday 8-9pm   | Available on ACORN | Ahmed Halat / Mohamed Halat       |
+|         | Time                  | Location   | Instructor                        |
+| ------- | --------------------- | ---------- | --------------------------------- |
+| LEC01   | Tuesday 5-7pm         | Available on ACORN | Cho Yin Yong / Aleksander Bodurri |
+| LEC02   | Thursday 5-7pm        | Available on ACORN | Cho Yin Yong / Aleksander Bodurri |
+| TUT0001 | Wednesday 7-8pm       | Available on ACORN    | TBD                     |
+| TUT0002 | Friday 9-10am         | Available on ACORN    | TBD                       |
+| TUT0003 | Wednesday 4-5pm       | Available on ACORN    | TBD                   |
+| TUT0004 | Tuesday 7-8pm         | Available on ACORN    | TBD                       |
+| TUT0005 | Tuesday 4-5pm         | Available on ACORN    | TBD                       |
+| TUT0006 | Wednesday 12-1pm      | Available on ACORN    | TBD       |
 
 # Course Information
 
@@ -67,7 +61,7 @@ course website. If you see something on the course website that should be fixed,
 
 - [Slack](https://utsc-cscd01.slack.com/join/signup#/domain-signup)
 
-The slack #fall-2024 channel is the best place to ask technical questions, and general questions about the course, assignments and project. For personal issues, please private message either instructor. I try to respond by the end of the next day. However, due to volume, it may take longer, especially on weekends.
+The slack #fall-2025 channel is the best place to ask technical questions, and general questions about the course, assignments and project. For personal issues, please private message either instructor. I try to respond by the end of the next day. However, due to volume, it may take longer, especially on weekends.
 
 - [Anonymous Feedback Form](https://forms.gle/8jLHwvrxb5chDTgx6)
 
@@ -77,15 +71,16 @@ sent through the feedback form are considered public, and they may receive a res
 
 # Marking Scheme
 
-Group work and individual tutorial quizzes will be used to compute a composite numeric score that will determine your final letter grade for the course:
+Group work will be used to compute a composite numeric score that will determine your final letter grade for the course:
 
 | Coursework                        | Weight |
 | --------------------------------- | ------ |
 | Team Formation and Team Agreement | 2%     |
 | Group Open Source Project         | 18%    |
-| Group Presentation                | 20%    |
-| Group Assignment                  | 30%    |
-| Tutorial Quizzes                  | 30%    |
+| Architecture Arena                | 10%    |
+| Group - Architecture Document     | 20%    |
+| Group - Architecture Presentation | 20%    |
+| Final Exam                        | 30%    |
 
 # Submission and Grading Policy
 
@@ -96,9 +91,9 @@ members based on their individual contributions made to the team repository.
 
 For your work to be graded, it must meet the minimum standards of a professional computer scientist.
 
-No late submissions will be accepted. No make-up quizzes will be given, and if there is a valid reason for missing a quiz, the weight of the missed quiz will be distributed to the remaining quizzes.
+No late submissions will be accepted.
 
-If an emergency arises that prevents you from being able to complete any piece of work, or attend a quiz, contact one of the instructors immediately. You must first declare your absence on ACORN with the Absence Declaration. The Absence Declaration is going to be limited to one time use each term, up to a maximum of 7 days. That declaration can/should be used for missing any academic obligations (class, quiz, etc.). After students have used their one absence declaration in the term, further accommodations regarding missed work, make-ups, etc. will be at the discretion of the instructor.
+If an emergency arises that prevents you from being able to complete any piece of work, contact one of the instructors immediately. You must first declare your absence on ACORN with the Absence Declaration. The Absence Declaration is going to be limited to one time use each term, up to a maximum of 7 days. That declaration can/should be used for missing any academic obligations (class, etc.). After students have used their one absence declaration in the term, further accommodations regarding missed work, make-ups, etc. will be at the discretion of the instructor.
 
 If a piece of work has been mis-marked or if you believe the rubric used to evaluate the work is not appropriate, you may request a remark. For a remark to succeed, you must clearly and concisely express what you believe was mis-marked. To request a remark, please contact your TA. Requests must be submitted within 1 week of the marks being returned.
 
@@ -114,8 +109,6 @@ You may discuss coursework with other students, for example to clarify the requi
 
 The course staff reserves the right to use code and text analysis tools to compare your submission
 with others to verify that no improper collaboration has occurred. The terms that apply to the University's use of this tool are described on the Centre for Teaching Support & Innovation web site (https://uoft.me/pdt-faq).
-
-When writing the quizzes in the tutorial, you are not allowed to discuss the quiz with anyone else. You are not allowed to use any resources other than what is allowed in the quiz instructions.
 
 Failure to comply with these guidelines is a serious academic offence. In past academic offense cases, the Associate Dean has imposed penalties for code violations that range from a mark of zero on plagiarized assignments to academic suspension from the University.
 
