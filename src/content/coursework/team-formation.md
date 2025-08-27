@@ -9,9 +9,9 @@ dueDate: 2025-09-16
 
 Throughout the semester, your team will complete 3 team projects:
 
-- Project: Open Source Contribution with langchain
-- Presentation: Verbal Kata
-- Assignment: Creating a Design Document
+- Project: Open Source Contribution with Superset
+- Assignment: Group Architecture Document
+- Presentation: Group Architecture Presentation
 
 # Team Formation (1%)
 
