@@ -61,7 +61,7 @@ course website. If you see something on the course website that should be fixed,
 
 The slack #fall-2025 channel is the best place to ask technical questions, and general questions about the course, assignments and project. For personal issues, please private message either instructor. I try to respond by the end of the next day. However, due to volume, it may take longer, especially on weekends.
 
-- [Anonymous Feedback Form](https://forms.gle/8jLHwvrxb5chDTgx6)
+- [Anonymous Feedback Form](https://forms.gle/BCuctVwGRvpRtuR87)
 
 If you have feedback about the course, you can send an anonymous feedback to the course instructor
 (you also have the option of including your name). Since the sender cannot be determined, comments
