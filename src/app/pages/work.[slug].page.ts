@@ -28,7 +28,9 @@ import { getMeta } from "../meta/route-meta";
       @if (handout) {
         <h1>{{ handout.attributes.title }}</h1>
         <p>{{ handout.attributes.description }}</p>
-        <p>Due Date: {{ handout.attributes.dueDate | date: "medium" }}</p>
+        @if (handout.attributes.dueDate) {
+          <p>Due Date: {{ handout.attributes.dueDate | date: "medium" }}</p>
+        }
         <analog-markdown [content]="handout.content"></analog-markdown>
       }
     </div>

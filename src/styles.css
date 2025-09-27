@@ -144,3 +144,8 @@ hr {
 p img {
   max-width: 100%;
 }
+
+pre.mermaid svg {
+    max-width: max(50%, 415px) !important;
+    background: white;
+}

@@ -66,7 +66,7 @@ export const routeMeta: RouteMeta = getRouteMeta({
       >
         <div class="work-details">
           <div class="work-title">{{ work.attributes.title }}</div>
-          @if (isReleased()) {
+          @if (isReleased() && work.attributes.dueDate) {
             <div class="work-date">
               Due on {{ getDateString(work.attributes.dueDate) }}
             </div>
