@@ -22,8 +22,33 @@ export const environment = {
       ],
     },
     {
+      name: 'Sessional Instructional Assistants',
+      members: [
+        {
+          name: "Jacky Zhuang",
+          website: "",
+          title: ""
+        }
+      ]
+    },
+    {
       name: "Teaching Assistants",
       members: [
+        {
+          name: "Vincent Zhang",
+          website: "",
+          title: ""
+        },
+        {
+          name: "Aarya Prakash",
+          website: "",
+          title: ""
+        },
+        {
+          name: "Kevin Zhang",
+          website: "",
+          title: ""
+        }
       ],
     },
     {
