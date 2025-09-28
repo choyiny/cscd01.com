@@ -31,7 +31,7 @@ This semester, you and your team will be contributing to Apache Superset. The ma
 
 ## Identifying and Analyzing the Issue (40%)
 
-> This part of the project is due on your tutorial in Week of October 16th.
+> This part of the project is due on your tutorial in Week of October 13th.
 
 Your team will identify 1-2 issues to work on. Although we will attempt to grade your work on both issues, we will only take the best one for your final grade. You can find outstanding issues on the official GitHub repository:
 
