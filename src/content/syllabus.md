@@ -38,6 +38,10 @@ We encourage you to post questions regarding course materials and assignments on
 | --------------------------------- | --------------- | ------------- |
 | Cho Yin Yong / Aleksander Bodurri | Tuesday 7-8pm   | After Lecture |
 | Cho Yin Yong / Aleksander Bodurri | Thursday 7-8pm  | After Lecture |
+| Aarya Prakash                     | Tuesday 8-9pm   | IA 3180       |
+| Vincent Zhang                     | Wednesday 6-7pm | IA 3100       |
+| Jacky Zhuang                      | Wednesday 8-9pm | IA 3010       |
+| Kevin Zhang                       | Thursday 3-4pm  | IA 3180       |
 
 # Course Timing
 
