@@ -1,5 +1,5 @@
 ---
-title: Architecture Arena Part 1
+title: Architecture Arena Part 2 - Solution & Trade-offs
 description: This assignment will occur in tutorial on the week of October 14th.
 releaseDate: 2025-10-12
 ---
@@ -30,7 +30,11 @@ WHERE
 
 Chirper found the weekly execution of SQL queries by a data analyst to be time-consuming. To address this, a developer suggested building a new application, Chirper Analytics, which would empower the marketing team to generate weekly reports based on the platform statistics previously created by the data analyst.
 
-### **Grading and Evaluation**
+### Task
+
+At a high level, you are tasked with creating a solution, and evaluate its trade-offs.
+
+### Grading and Evaluation
 
 Your answers will be graded by the Teaching Assistants (TAs) based on their comprehensiveness, accuracy, and demonstrated understanding of architectural principles.
 
