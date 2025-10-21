@@ -5,4 +5,4 @@ releaseDate: 2025-10-20
 ---
 **Groups:** This assignment will be completed in your pre-assigned groups from the beginning of the semester.
 
-Please read the following handout and design accordingly.
+Please read the following [handout](https://drive.google.com/file/d/14qiIZ7lAKRtnvzEMfwZ-SIQbFkK_108K/view?usp=sharing) and design accordingly.
