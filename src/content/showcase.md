@@ -1,3 +1,26 @@
+# Fall 2025
+
+The following Github repository was eligible for this year:
+
+- https://github.com/apache/superset/issues
+
+<br>
+
+- [Team 418-im-a-teapot: Export table data with "Search box" enabled](https://github.com/apache/superset/pull/36281)
+- [Team Kevin: Show search filtered total](https://github.com/apache/superset/pull/36083)
+- [Team Chosen Ones: Fix histograms failing to process NULL values on the x-axis](https://github.com/apache/superset/pull/35693)
+- [Team SARJ: Improve country map hover tooltip](https://github.com/apache/superset/pull/36323)
+- [Team SARJ: Add icons and text labels to deck.gl GeoJSON visualization](https://github.com/apache/superset/pull/36201)
+- [Team YAMN: Fix cross-filtering for maps on charts within dashboards](https://github.com/apache/superset/pull/35919)
+- [Team number-one-team: Migrate to TypeScript](https://github.com/apache/superset/pull/36347)
+- [Team number-one-team: Migrate to TypeScript](https://github.com/apache/superset/pull/36286)
+- [Team W-Mans: Convert word cloud configuration objects to React components](https://github.com/apache/superset/pull/36275)
+- [Team wuthering-waves: Add a floating-point format for chart x-axes](https://github.com/apache/superset/pull/35915)
+- [Team 404-found: Add boolean conditional formatting support](https://github.com/apache/superset/pull/36338)
+- [Team 404-found: Introduce a gradient toggle for table chart formatting](https://github.com/apache/superset/pull/36280)
+- [Team Tim Cat: Convert INTHEWILD.md to YAML and display it as a React page](https://github.com/apache/superset/pull/36386)
+- [Team Five Guys: Add Cloudflare D1 database support](https://github.com/apache/superset/pull/36348)
+
 # Fall 2024
 
 The following Github repositories were eligible for this year:

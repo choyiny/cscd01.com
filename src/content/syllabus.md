@@ -38,10 +38,6 @@ We encourage you to post questions regarding course materials and assignments on
 | --------------------------------- | --------------- | ------------- |
 | Cho Yin Yong / Aleksander Bodurri | Tuesday 7-8pm   | After Lecture |
 | Cho Yin Yong / Aleksander Bodurri | Thursday 7-8pm  | After Lecture |
-| Aarya Prakash                     | Tuesday 8-9pm   | IA 3180       |
-| Vincent Zhang                     | Wednesday 6-7pm | IA 3100       |
-| Jacky Zhuang                      | Wednesday 8-9pm | IA 3010       |
-| Kevin Zhang                       | Thursday 3-4pm  | IA 3180       |
 
 # Course Timing
 
@@ -49,10 +45,10 @@ We encourage you to post questions regarding course materials and assignments on
 | ------- | --------------------- | ---------- | --------------------------------- |
 | LEC01   | Tuesday 5-7pm         | Available on ACORN | Cho Yin Yong / Aleksander Bodurri |
 | LEC02   | Thursday 5-7pm        | Available on ACORN | Cho Yin Yong / Aleksander Bodurri |
-| TUT0001 | Wednesday 7-8pm       | Available on ACORN    | Jacky Zhuang                     |
-| TUT0003 | Wednesday 4-5pm       | Available on ACORN    | Vincent Zhang                   |
-| TUT0004 | Tuesday 7-8pm         | Available on ACORN    | Aarya Prakash                       |
-| TUT0005 | Tuesday 4-5pm         | Available on ACORN    | Kevin Zhang                       |
+| TUT0001 | Wednesday 7-8pm       | Available on ACORN |                                    |
+| TUT0003 | Wednesday 4-5pm       | Available on ACORN |                                    |
+| TUT0004 | Tuesday 7-8pm         | Available on ACORN |                                    |
+| TUT0005 | Tuesday 4-5pm         | Available on ACORN |                                    |
 
 # Course Information
 
@@ -63,7 +59,7 @@ course website. If you see something on the course website that should be fixed,
 
 - [Slack](https://utsc-cscd01.slack.com/join/signup#/domain-signup)
 
-The slack #fall-2025 channel is the best place to ask technical questions, and general questions about the course, assignments and project. For personal issues, please private message either instructor. I try to respond by the end of the next day. However, due to volume, it may take longer, especially on weekends.
+The slack #fall-2026 channel is the best place to ask technical questions, and general questions about the course, assignments and project. For personal issues, please private message either instructor. I try to respond by the end of the next day. However, due to volume, it may take longer, especially on weekends.
 
 - [Anonymous Feedback Form](https://forms.gle/NbPY5yAz36QerZyt9)
 
@@ -79,8 +75,8 @@ Group work will be used to compute a composite numeric score that will determine
 | --------------------------------- | ------ |
 | Team Formation and Team Agreement | 2%     |
 | Group Open Source Project         | 18%    |
-| Architecture Arena                | 10%    |
-| Group - Architecture Document     | 20%    |
+| Architecture Arena                | 15%    |
+| Group - Architecture Document     | 15%    |
 | Group - Architecture Presentation | 20%    |
 | Final Exam                        | 30%    |
 

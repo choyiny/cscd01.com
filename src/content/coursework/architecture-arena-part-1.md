@@ -1,7 +1,7 @@
 ---
 title: Architecture Arena Part 1
 description: This assignment will occur in tutorial on the week of September 29th.
-releaseDate: 2025-09-26
+releaseDate: 2026-09-26
 ---
 **Groups:** This assignment will be completed in your pre-assigned groups from the beginning of the semester.
 
