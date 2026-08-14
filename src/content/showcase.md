@@ -30,16 +30,16 @@ The following Github repositories were eligible for this year:
 
 <br>
 
-### Migrations (requested by maintainers) (10%)
+### Migrations (requested by maintainers)
 
 - [MAPS: Upgrade node-llama-cpp to be compatible with version 3](https://github.com/langchain-ai/langchainjs/pull/7135)
 - [Capstoners: Mistral migration](https://github.com/langchain-ai/langchainjs/pull/7218)
 
-### More significant external integrations (5%)
+### More significant external integrations
 
 - [Team langchain: FAISS comparators](https://github.com/langchain-ai/langchain/pull/28207)
 
-### Medium Bugfixes or ollama/google bugfixes (3%)
+### Medium Bugfixes or ollama/google bugfixes
 
 - [3b1n: partners/ollama - fix tool calling with nested schemas](https://github.com/langchain-ai/langchain/pull/28225)
 - [202 Accepted: Enabled Token Level Streaming for ChatOllama](https://github.com/langchain-ai/langchain/pull/27689)
@@ -47,7 +47,7 @@ The following Github repositories were eligible for this year:
 - [Llambda: Gemini system message](https://github.com/langchain-ai/langchainjs/pull/7235)
 - [Langelchain: fix state persistence in ExperimentalMarkdownSyntaxTextSplitter](https://github.com/langchain-ai/langchain/pull/28373)
 
-### Tools / External Integrations (2%)
+### Tools / External Integrations
 
 - [NotD01: Memcached LLM Cache Integration](https://github.com/langchain-ai/langchain/pull/27323)
 - [Leaf Node: Tool Calling and Stop Token for ChatDeepInfra](https://github.com/langchain-ai/langchainjs/pull/7126)
@@ -56,18 +56,18 @@ The following Github repositories were eligible for this year:
 - [43350: Add id in chroma search result](https://github.com/langchain-ai/langchainjs/pull/7120)
 - [Group DAG: Port ArxivRetriever to LangChainJS](https://github.com/langchain-ai/langchainjs/pull/7250)
 
-### Tiny Bugfixes (1%)
+### Tiny Bugfixes
 
 - [InChognito: Fix DuckDuckGo search tool Output Format](https://github.com/langchain-ai/langchain/pull/27479)
 - [InChognito: fix HuggingFacePipeline model_id parameter](https://github.com/langchain-ai/langchain/pull/27514)
 - [Fork queue](https://github.com/langchain-ai/langchain/pull/28421)
 
-### Small Bugfixes (2%)
+### Small Bugfixes
 
 - [Team of 5: Fix structured parser with triple backticks](https://github.com/langchain-ai/langchainjs/pull/7199)
 - [Head-3mpty: fix Image prompt template format](https://github.com/langchain-ai/langchain/pull/27495)
 
-### Tools (1%)
+### Tools
 
 - [Passion-pals: Google Trends API](https://github.com/langchain-ai/langchainjs/pull/7248)
 - [Big d01 struggling: Google Books API](https://github.com/langchain-ai/langchain/pull/27307)
