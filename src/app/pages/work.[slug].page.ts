@@ -1,17 +1,13 @@
-import {
-  ContentFile,
-  MarkdownComponent,
-  injectContent,
-} from "@analogjs/content";
-import { Component, inject } from "@angular/core";
+import { MarkdownComponent, injectContent } from "@analogjs/content";
+import { Component, effect, inject } from "@angular/core";
+import { toSignal } from "@angular/core/rxjs-interop";
 import { CourseworkAttributes } from "../interfaces/file-attributes";
-import { AsyncPipe, DatePipe } from "@angular/common";
+import { DatePipe } from "@angular/common";
 import { Meta, Title } from "@angular/platform-browser";
 import { getMeta } from "../meta/route-meta";
 
 @Component({
-  standalone: true,
-  imports: [MarkdownComponent, AsyncPipe, DatePipe],
+  imports: [MarkdownComponent, DatePipe],
   styles: [
     `
       .container {
@@ -25,7 +21,7 @@ import { getMeta } from "../meta/route-meta";
   ],
   template: `
     <div class="container">
-      @if (handout) {
+      @if (handout(); as handout) {
         <h1>{{ handout.attributes.title }}</h1>
         <p>{{ handout.attributes.description }}</p>
         @if (handout.attributes.dueDate) {
@@ -37,30 +33,27 @@ import { getMeta } from "../meta/route-meta";
   `,
 })
 export default class CourseworkComponent {
-  meta = inject(Meta);
-  title = inject(Title);
-  handout:
-    | ContentFile<CourseworkAttributes | Record<string, never>>
-    | undefined = undefined;
+  private readonly meta = inject(Meta);
+  private readonly title = inject(Title);
 
-  constructor() {
+  readonly handout = toSignal(
     injectContent<CourseworkAttributes>({
       param: "slug",
       subdirectory: "coursework",
-    }).subscribe((handout) => {
-      this.setHandout(handout);
-    });
-  }
+    }),
+  );
 
-  setHandout(
-    handout: ContentFile<CourseworkAttributes | Record<string, never>>,
-  ) {
-    this.handout = handout;
-    this.title.setTitle(handout.attributes.title);
-    const meta = getMeta({
-      title: handout.attributes.title,
-      description: handout.attributes.description,
+  constructor() {
+    effect(() => {
+      const handout = this.handout();
+      if (!handout) {
+        return;
+      }
+      this.title.setTitle(handout.attributes.title);
+      getMeta({
+        title: handout.attributes.title,
+        description: handout.attributes.description,
+      }).forEach((metaTag) => this.meta.updateTag(metaTag));
     });
-    meta.forEach((metaTag) => this.meta.updateTag(metaTag));
   }
 }

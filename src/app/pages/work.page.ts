@@ -13,7 +13,6 @@ export const routeMeta: RouteMeta = getRouteMeta({
 });
 
 @Component({
-  standalone: true,
   imports: [RouterLink],
   selector: "app-coursework-item",
   styles: [
@@ -79,7 +78,7 @@ export const routeMeta: RouteMeta = getRouteMeta({
     }
   `,
 })
-class CourseworkItemComponent {
+export class CourseworkItemComponent {
   @Input() work: ContentFile<CourseworkAttributes> | undefined = undefined;
 
   getDateString(date: Date) {
@@ -102,7 +101,6 @@ class CourseworkItemComponent {
 }
 
 @Component({
-  standalone: true,
   imports: [CourseworkItemComponent],
   styles: [
     `
@@ -129,9 +127,7 @@ class CourseworkItemComponent {
 export default class WorkPage {
   readonly courseworkList = injectContentFiles<CourseworkAttributes>(
     (contentFile) => {
-      const isCoursework = contentFile.filename.includes(
-        "/src/content/coursework",
-      );
+      const isCoursework = contentFile.filename.includes("content/coursework/");
       return isCoursework;
     },
   ).sort((a, b) => {

@@ -12,7 +12,6 @@ export const routeMeta: RouteMeta = getRouteMeta({
 });
 
 @Component({
-  standalone: true,
   imports: [MarkdownComponent, AsyncPipe],
   styles: [
     `
@@ -49,5 +48,5 @@ export const routeMeta: RouteMeta = getRouteMeta({
   `,
 })
 export default class ShowcasePage {
-  post$ = injectContent<PostAttributes>({ customFilename: "showcase" });
+  post$ = injectContent<PostAttributes>({ customFilename: "site/showcase" });
 }
