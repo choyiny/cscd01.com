@@ -12,7 +12,6 @@ export const routeMeta: RouteMeta = getRouteMeta({
 });
 
 @Component({
-  standalone: true,
   imports: [MarkdownComponent, AsyncPipe],
   styles: [
     `
@@ -45,5 +44,5 @@ export const routeMeta: RouteMeta = getRouteMeta({
   `,
 })
 export default class ExtraResourcesPage {
-  post$ = injectContent<PostAttributes>({ customFilename: "resources" });
+  post$ = injectContent<PostAttributes>({ customFilename: "site/resources" });
 }

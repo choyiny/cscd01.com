@@ -9,7 +9,6 @@ export const routeMeta: RouteMeta = getRouteMeta({
 });
 
 @Component({
-  standalone: true,
   selector: "app-member",
   styles: [
     `
@@ -29,13 +28,12 @@ export const routeMeta: RouteMeta = getRouteMeta({
     <p>{{ title }}</p>
   `,
 })
-class MemberComponent {
+export class MemberComponent {
   @Input() name = "";
   @Input() title = "";
 }
 
 @Component({
-  standalone: true,
   styles: [
     `
       section {

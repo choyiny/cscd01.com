@@ -5,7 +5,6 @@ import { environment } from "../environments/environment";
 
 @Component({
   selector: "app-root",
-  standalone: true,
   imports: [RouterOutlet, RouterModule, NgFor],
   template: `
     <nav class="noprint">

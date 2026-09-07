@@ -1,4 +1,4 @@
-import { injectContentFiles } from "@analogjs/content";
+import { ContentFile, injectContentFiles } from "@analogjs/content";
 import { Component, Input } from "@angular/core";
 import { LectureAttributes } from "../interfaces/file-attributes";
 
@@ -13,7 +13,6 @@ export const routeMeta: RouteMeta = getRouteMeta({
 });
 
 @Component({
-  standalone: true,
   imports: [RouterLink],
   selector: "app-lecture-item",
   styles: [
@@ -80,8 +79,8 @@ export const routeMeta: RouteMeta = getRouteMeta({
     }
   `,
 })
-class LectureItemComponent {
-  @Input() lecture: LectureAttributes | undefined = undefined;
+export class LectureItemComponent {
+  @Input() lecture: ContentFile<LectureAttributes> | undefined = undefined;
 
   getDateString(date: Date) {
     return new Date(date).toLocaleString("en-US", {
@@ -93,7 +92,6 @@ class LectureItemComponent {
 }
 
 @Component({
-  standalone: true,
   imports: [LectureItemComponent],
   styles: [
     `
@@ -117,6 +115,6 @@ class LectureItemComponent {
 })
 export default class SchedulePage {
   readonly lectures = injectContentFiles<LectureAttributes>((contentFile) =>
-    contentFile.filename.includes("/src/content/lectures/"),
+    contentFile.filename.includes("content/lectures/"),
   ).sort((a, b) => a.attributes.week - b.attributes.week);
 }

@@ -1,4 +1,4 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
+/* To learn more about this file see: https://angular.dev/reference/configs/file-structure. */
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
@@ -9,6 +9,7 @@
   "include": [
     "src/**/*.d.ts",
     "src/app/routes/**/*.ts",
-    "src/app/pages/**/*.page.ts"
+    "src/app/pages/**/*.page.ts",
+    "src/server/middleware/**/*.ts"
   ]
 }

@@ -12,7 +12,6 @@ export const routeMeta: RouteMeta = getRouteMeta({
 });
 
 @Component({
-  standalone: true,
   imports: [MarkdownComponent, AsyncPipe],
   styles: [
     `
@@ -78,5 +77,5 @@ export default class HomePage {
   instructors = environment.staff.find(
     (staffType) => staffType.name === "Instructors",
   )?.members;
-  post$ = injectContent<PostAttributes>({ customFilename: "syllabus" });
+  post$ = injectContent<PostAttributes>({ customFilename: "site/syllabus" });
 }
