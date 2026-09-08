@@ -38,6 +38,10 @@ We encourage you to post questions regarding course materials and assignments on
 | --------------------------------- | --------------- | ------------- |
 | Cho Yin Yong / Aleksander Bodurri | Tuesday 7-8pm   | After Lecture |
 | Cho Yin Yong / Aleksander Bodurri | Thursday 7-8pm  | After Lecture |
+| Kevin Zhang                       | Thursday 11am-12pm | CS Help Lab |
+| Daniel Alyoshin                   | Thursday 3-4pm  | CS Help Lab   |
+| Brandan Burgess                   | Wednesday 2-3pm | CS Help Lab   |
+| Yusuf Khan                        | Wednesday 6-7pm | CS Help Lab   |
 
 # Course Timing
 
@@ -45,10 +49,10 @@ We encourage you to post questions regarding course materials and assignments on
 | ------- | --------------------- | ---------- | --------------------------------- |
 | LEC01   | Tuesday 5-7pm         | Available on ACORN | Cho Yin Yong / Aleksander Bodurri |
 | LEC02   | Thursday 5-7pm        | Available on ACORN | Cho Yin Yong / Aleksander Bodurri |
-| TUT0001 | Wednesday 7-8pm       | Available on ACORN |                                    |
-| TUT0003 | Wednesday 4-5pm       | Available on ACORN |                                    |
-| TUT0004 | Tuesday 7-8pm         | Available on ACORN |                                    |
-| TUT0005 | Tuesday 4-5pm         | Available on ACORN |                                    |
+| TUT0001 | Wednesday 7-8pm       | Available on ACORN | Kevin Zhang                       |
+| TUT0003 | Wednesday 4-5pm       | Available on ACORN | Daniel Alyoshin                   |
+| TUT0004 | Tuesday 7-8pm         | Available on ACORN | Brandan Burgess                   |
+| TUT0005 | Tuesday 4-5pm         | Available on ACORN | Yusuf Khan                        |
 
 # Course Information
 

@@ -22,6 +22,25 @@ export const environment = {
       ],
     },
     {
+      name: "Sessional Instructional Assistant",
+      members: [
+        {
+          name: "Yusuf Khan",
+          title: "Senior Full Stack Software Developer, Verto Health",
+          website: "",
+        },
+      ],
+    },
+    {
+      name: "Teaching Assistants",
+      members: [
+        { name: "Kevin Zhang", title: "TUT0001", website: "" },
+        { name: "Daniel Alyoshin", title: "TUT0003", website: "" },
+        { name: "Brandan Burgess", title: "TUT0004", website: "" },
+        { name: "Yusuf Khan", title: "TUT0005", website: "" },
+      ],
+    },
+    {
       name: "Software Architect in Residence",
       members: [],
     },
