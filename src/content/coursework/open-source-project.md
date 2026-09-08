@@ -1,8 +1,8 @@
 ---
 title: Open Source Project - "Implementation / Testing"
 description: In this project, we will be working with a large codebase to test your implementation and testing skills from the SDLC. You will be contributing to a chosen open source project, and your professionalism, progress, communication, and implementation will be graded.
-releaseDate: 2026-09-16
-dueDate: 2026-11-30T16:59:59-04:00
+releaseDate: 2026-09-23
+dueDate: 2026-12-07T16:59:59-05:00
 ---
 
 ## Introduction
@@ -31,7 +31,7 @@ This semester, you and your team will be contributing to Apache Superset. The ma
 
 ## Identifying and Analyzing the Issue (40%)
 
-> This part of the project is due on your tutorial in Week of October 13th.
+> This part of the project is due on your tutorial in Week of October 20th.
 
 Your team will identify 1-2 issues to work on. Although we will attempt to grade your work on both issues, we will only take the best one for your final grade. You can find outstanding issues on the official GitHub repository:
 
@@ -63,7 +63,7 @@ You can refer to this [example](https://drive.google.com/file/d/1uk4eD2Q8SlWDFDW
 
 ## Pull Request to Superset (40%)
 
-> Note: This part of the project is due on November 30th.
+> Note: This part of the project is due on December 7th.
 
 It’s time to turn your plan into reality. One member of your team must fork the Superset repo and create a new branch to start working on the solution.
 
