@@ -49,10 +49,10 @@ We encourage you to post questions regarding course materials and assignments on
 | ------- | --------------------- | ---------- | --------------------------------- |
 | LEC01   | Tuesday 5-7pm         | Available on ACORN | Cho Yin Yong / Aleksander Bodurri |
 | LEC02   | Thursday 5-7pm        | Available on ACORN | Cho Yin Yong / Aleksander Bodurri |
-| TUT0001 | Wednesday 7-8pm       | Available on ACORN | Kevin Zhang                       |
+| TUT0001 | Thursday 12-1pm       | Available on ACORN | Kevin Zhang                       |
+| TUT0002 | Tuesday 4-5pm         | Available on ACORN | Yusuf Khan                        |
 | TUT0003 | Wednesday 4-5pm       | Available on ACORN | Daniel Alyoshin                   |
 | TUT0004 | Tuesday 7-8pm         | Available on ACORN | Brandan Burgess                   |
-| TUT0005 | Tuesday 4-5pm         | Available on ACORN | Yusuf Khan                        |
 
 # Course Information
 
