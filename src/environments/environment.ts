@@ -35,9 +35,9 @@ export const environment = {
       name: "Teaching Assistants",
       members: [
         { name: "Kevin Zhang", title: "TUT0001", website: "" },
+        { name: "Yusuf Khan", title: "TUT0002", website: "" },
         { name: "Daniel Alyoshin", title: "TUT0003", website: "" },
         { name: "Brandan Burgess", title: "TUT0004", website: "" },
-        { name: "Yusuf Khan", title: "TUT0005", website: "" },
       ],
     },
     {
