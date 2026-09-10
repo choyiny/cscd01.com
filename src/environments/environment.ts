@@ -11,13 +11,13 @@ export const environment = {
       members: [
         {
           name: "Cho Yin Yong",
-          title: "Engineering Manager, Verto Health",
+          title: "AI Solution Engineer @ XY SPACE",
           website: "https://choy.in",
         },
         {
           name: "Aleksander Bodurri",
           website: "https://www.linkedin.com/in/aleksanderbodurri",
-          title: "Development Team Lead, Verto Health | Angular Team Member",
+          title: "Principal AI Architect @ WELLSTAR | Angular Team Member",
         },
       ],
     },
