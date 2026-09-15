@@ -1,0 +1,6 @@
+# Nothing generated lands here today, but keep stray local overrides out.
+superset_config_docker.py
+docker/.env-local
+
+# Points at your Superset checkout; the path is yours, not the repo's.
+.env.dev

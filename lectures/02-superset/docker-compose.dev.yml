@@ -1,0 +1,87 @@
+# Dev overlay — runs Superset from a source checkout instead of the published
+# image. Use ./dev.sh, which loads SUPERSET_SRC and passes both files:
+#
+#   ./dev.sh up
+#   ./dev.sh logs -f superset-node
+#   ./dev.sh down
+#
+# A different project name means different containers and different volumes, so
+# your fork's migrations can't touch the database the demo stack is seeded with.
+
+name: superset-dev
+
+# apache/superset installs Superset as an editable install pointing at
+# /app/superset, so mounting a checkout over it is enough — no rebuild.
+x-superset-src: &superset-src
+  - ${SUPERSET_SRC:?set SUPERSET_SRC in .env.dev — see README}/superset:/app/superset
+  - ${SUPERSET_SRC}/superset-core:/app/superset-core
+  - ${SUPERSET_SRC}/superset-frontend:/app/superset-frontend
+
+services:
+  # Migrations and seeding run from your checkout too, not the image's copy.
+  superset-init:
+    # Distinct from the demo stack's container of the same name.
+    container_name: superset-dev-init
+    volumes: *superset-src
+
+  superset:
+    container_name: superset-dev
+    # Flask's development server, with the reloader and debugger, in place of
+    # gunicorn. Threaded on purpose: upstream's docker-bootstrap.sh runs it
+    # --without-threads, and a single-threaded Werkzeug deadlocks against the
+    # keep-alive connections webpack-dev-server's proxy holds open.
+    command:
+      - flask
+      - run
+      - --host=0.0.0.0
+      - --port=8088
+      - --with-threads
+      - --reload
+      - --debugger
+      - --exclude-patterns
+      - "*/node_modules/*:*/.venv/*:*/build/*:*/__pycache__/*"
+    environment:
+      SUPERSET_ENV: development
+      FLASK_DEBUG: "true"
+    # !override replaces the demo stack's mapping rather than adding to it.
+    ports: !override
+      - "127.0.0.1:${DEV_PORT:-8088}:8088"
+    volumes: *superset-src
+
+  # The image ships no node, and superset-frontend/ is stripped to a
+  # package.json — the JavaScript it serves is build output, not source. So the
+  # frontend gets its own container.
+  superset-node:
+    # node, plus the zstd binary: webpack's proxy config pulls in simple-zstd,
+    # which shells out to it. Same trick as the Dockerfile next door.
+    build:
+      dockerfile_inline: |
+        FROM node:22-bookworm-slim
+        RUN apt-get update \
+            && apt-get install -y --no-install-recommends zstd \
+            && rm -rf /var/lib/apt/lists/*
+    image: cscd01/superset-node:22
+    working_dir: /app/superset-frontend
+    # Install only when node_modules is empty; npm ci would otherwise wipe and
+    # reinstall on every restart.
+    command:
+      - sh
+      - -c
+      - '[ -f node_modules/.package-lock.json ] || npm ci; exec npm run dev-server'
+    environment:
+      # webpack.proxy-config.js reads this: where to proxy every request the
+      # dev server doesn't answer itself.
+      superset: http://superset:8088
+      # Defaults to 127.0.0.1, which nothing outside the container can reach.
+      WEBPACK_DEVSERVER_HOST: "0.0.0.0"
+    ports:
+      - "127.0.0.1:${DEV_NODE_PORT:-9000}:9000"
+    volumes:
+      - ${SUPERSET_SRC}/superset:/app/superset
+      - ${SUPERSET_SRC}/superset-frontend:/app/superset-frontend
+      # Keeps a Linux node_modules out of your checkout, and off the slow bind
+      # mount.
+      - frontend_node_modules:/app/superset-frontend/node_modules
+
+volumes:
+  frontend_node_modules:

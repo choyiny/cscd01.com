@@ -1,0 +1,99 @@
+# Apache Superset — lecture demo stack
+#
+#   docker compose up -d        # start (first run takes a few minutes)
+#   docker compose logs -f superset-init
+#   open http://localhost:8088  # admin / admin
+#   docker compose down -v      # stop and wipe all state
+#
+# Three pieces, which is the whole point of the demo:
+#   db        Postgres. Holds Superset's OWN metadata (dashboards, charts, users)
+#             in the `superset` database, and the sample analytics data in the
+#             `examples` database. Two very different jobs, one server.
+#   cache     Redis. Query-result and chart caching.
+#   superset  The Flask app itself, served by gunicorn.
+
+name: superset-demo
+
+x-superset-common: &superset-common
+  # Built from ./Dockerfile: apache/superset plus the Postgres driver.
+  build: .
+  image: cscd01/superset:6.1.0
+  env_file: .env
+  environment:
+    SUPERSET_CONFIG_PATH: /app/pythonpath/superset_config.py
+  volumes:
+    - ./superset_config.py:/app/pythonpath/superset_config.py:ro
+    - ./init.sh:/app/init.sh:ro
+    - superset_home:/app/superset_home
+  depends_on:
+    db:
+      condition: service_healthy
+    cache:
+      condition: service_healthy
+
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: superset
+      POSTGRES_PASSWORD: superset
+      POSTGRES_DB: superset
+    volumes:
+      - db_home:/var/lib/postgresql/data
+      - ./postgres-init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U superset -d superset"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    # Uncomment to poke at the metadata schema with psql/DBeaver from the host.
+    # ports:
+    #   - "5432:5432"
+
+  cache:
+    image: redis:7-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    volumes:
+      - cache_home:/data
+
+  # Runs once, then exits: migrations, admin user, roles/permissions, sample data.
+  # `superset` waits for this to finish successfully before it starts.
+  superset-init:
+    <<: *superset-common
+    container_name: superset-init
+    command: ["/app/init.sh"]
+    restart: "no"
+    # Inherited from the image, but it probes the web port this container
+    # never opens — it would sit "unhealthy" forever.
+    healthcheck:
+      disable: true
+
+  superset:
+    <<: *superset-common
+    container_name: superset
+    command: ["/usr/bin/run-server.sh"]
+    ports:
+      - "8088:8088"
+    depends_on:
+      db:
+        condition: service_healthy
+      cache:
+        condition: service_healthy
+      superset-init:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8088/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+      start_period: 90s
+    restart: unless-stopped
+
+volumes:
+  db_home:
+  cache_home:
+  superset_home:
