@@ -39,7 +39,7 @@ We encourage you to post questions regarding course materials and assignments on
 | Cho Yin Yong / Aleksander Bodurri | Tuesday 7-8pm   | After Lecture |
 | Cho Yin Yong / Aleksander Bodurri | Thursday 7-8pm  | After Lecture |
 | Kevin Zhang                       | Thursday 11am-12pm | CS Help Lab |
-| Daniel Alyoshin                   | Thursday 3-4pm  | CS Help Lab   |
+| Daniel Alyoshin                   | Thursday 4-5pm  | CS Help Lab   |
 | Brandan Burgess                   | Wednesday 2-3pm | CS Help Lab   |
 | Yusuf Khan                        | Wednesday 6-7pm | CS Help Lab   |
 
