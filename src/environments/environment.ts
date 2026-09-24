@@ -4,7 +4,7 @@ export const environment = {
   semester: "Fall 2026",
   courseTitle: "Engineering Large Software Systems",
   description:
-    "An introduction to the theory and practice of large-scale software system design, development, and deployment. Project management; advanced UML; requirements engineering; verification and validation; software architecture; performance modeling and analysis; formal methods in software engineering.",
+    "An introduction to the theory and practice of large-scale software system design, development, and deployment. Project management; requirements engineering; verification and validation; software architecture; performance modeling and analysis; formal methods in software engineering.",
   staff: [
     {
       name: "Instructors",
