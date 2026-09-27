@@ -26,7 +26,9 @@ import { SafePipe } from "../pipes/safe.pipe";
           Week {{ lecture.attributes.week }}: {{ lecture.attributes.title }}
         </h1>
         <p>{{ lecture.attributes.description }}</p>
-        <analog-markdown [content]="lecture.content"></analog-markdown>
+        @if (lecture.content) {
+          <analog-markdown [content]="lecture.content"></analog-markdown>
+        }
         @if (lecture.attributes.googleSlidesUrl) {
           <a [href]="lecture.attributes.googleSlidesUrl" target="_blank"
             >Lecture Slides</a

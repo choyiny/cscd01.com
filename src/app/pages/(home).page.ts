@@ -67,7 +67,9 @@ export const routeMeta: RouteMeta = getRouteMeta({
       </p>
     </div>
     @if (post$ | async; as post) {
-      <analog-markdown [content]="post.content"></analog-markdown>
+      @if (post.content) {
+        <analog-markdown [content]="post.content"></analog-markdown>
+      }
     }`,
 })
 export default class HomePage {
