@@ -32,6 +32,12 @@ import { SafePipe } from "../pipes/safe.pipe";
             >Lecture Slides</a
           >
         }
+        @if (lecture.attributes.tutorialSlidesUrl) {
+          <br />
+          <a [href]="lecture.attributes.tutorialSlidesUrl" target="_blank"
+            >Tutorial Slides</a
+          >
+        }
         @if (lecture.attributes.googleSlidesUrl) {
           <iframe
             [src]="lecture.attributes.googleSlidesUrl + 'embed' | safe"
