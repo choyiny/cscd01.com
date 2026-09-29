@@ -11,7 +11,7 @@ to the following scenario.
 ## **Scenario: Chirper** 
 Chirper is a fictitious, real-time microblogging service that emerged to fill a void in the social media landscape following the disappearance of Twitter. Birds can post Chirps and follow other Birds to receive a curated feed of their content.
 
-In addition, Chirper is getting huge traction. They have just crossed 1 million daily active users and 5 million daily tweets. Furthermore, on average, there are 100 followers per Bird, and the most popular bird, @paco, has gathered 2 million followers.
+In addition, Chirper is getting huge traction. They have just crossed 1 million daily active users and 5 million daily Chirps. Furthermore, on average, there are 100 followers per Bird, and the most popular bird, @paco, has gathered 2 million followers.
 
 **The Data Model**
 
