@@ -17,6 +17,14 @@ import { SafePipe } from "../pipes/safe.pipe";
       h1 {
         font-size: 30px;
       }
+
+      .html-slides {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border: 0;
+        margin: 0.5em 0 1.5em;
+      }
     `,
   ],
   template: `
@@ -39,6 +47,18 @@ import { SafePipe } from "../pipes/safe.pipe";
           <a [href]="lecture.attributes.tutorialSlidesUrl" target="_blank"
             >Tutorial Slides</a
           >
+        }
+        @if (lecture.attributes.htmlSlidesUrl) {
+          <br />
+          <a [href]="lecture.attributes.htmlSlidesUrl" target="_blank"
+            >Interactive slides (new tab)</a
+          >
+          <iframe
+            class="html-slides"
+            [src]="lecture.attributes.htmlSlidesUrl | safe"
+            allowfullscreen="true"
+          >
+          </iframe>
         }
         @if (lecture.attributes.googleSlidesUrl) {
           <iframe

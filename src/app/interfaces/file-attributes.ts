@@ -12,6 +12,7 @@ export interface LectureAttributes extends FileAttributes {
   week: number;
   date: Date;
   googleSlidesUrl?: string;
+  htmlSlidesUrl?: string;
   tutorialSlidesUrl?: string;
 }
 
