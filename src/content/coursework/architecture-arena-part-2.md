@@ -1,7 +1,7 @@
 ---
 title: Architecture Arena Part 2 - Solution & Trade-offs
 description: This assignment will occur in tutorial on the week of October 21st.
-releaseDate: 2026-10-19
+releaseDate: 2026-11-02
 ---
 **Groups:** This assignment will be completed in your pre-assigned groups from the beginning of the semester.
 
