@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cscd01",
+  "compatibility_date": "2026-10-21",
+  "build": {
+    "command": "yarn build",
+  },
+  "assets": {
+    "directory": "./dist/analog/public",
+  },
+  "routes": [{ "pattern": "cscd01.com", "custom_domain": true }],
+  "workers_dev": false,
+  "preview_urls": false,
+}
