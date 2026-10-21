@@ -10,45 +10,45 @@
     "@jridgewell/gen-mapping" "^0.3.5"
     "@jridgewell/trace-mapping" "^0.3.24"
 
-"@analogjs/content@^2.7.1":
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/@analogjs/content/-/content-2.7.1.tgz#91e51dc2eddcf8e599b966c1f066df3deaecab40"
-  integrity sha512-UVEEd5yyTXGtFhVZ+TvPanMe8HTCkoziD7eq3y093sNQ/LPvPE1eRDPE2zqXNAbYR938AspIa22OU38wWx/CSQ==
+"@analogjs/content@^2.9.1":
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/@analogjs/content/-/content-2.9.1.tgz#c60ee22a5c281ddca7d59f1c1a4318a33050ba1e"
+  integrity sha512-QXxh93OBxMtXQnK9siGI2OSha6COm8xmhnQeCLLOf7e9euG5hCVOEvu9oOjDEKhVJuKMJ5LNjCGpbmpX391Tjg==
   dependencies:
     tslib "^2.3.0"
 
-"@analogjs/platform@^2.7.1":
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/@analogjs/platform/-/platform-2.7.1.tgz#96e0fdb839a833e3725f656cff83a567a3272472"
-  integrity sha512-ASON69pnhgRNsZseT04mZqA7UOezNyZjxzvA8Uk0n2q2UfNWbIb6c7oLXHipOvoq3Yao5UrnHP3mt3m7wqjtQg==
+"@analogjs/platform@^2.9.1":
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/@analogjs/platform/-/platform-2.9.1.tgz#b23322676d8bc7ef659e0233169009e1cb27d23b"
+  integrity sha512-kdGdH7je49ICiQwurJebrX8C9kajayL/SIG+8noM7atPhCodQxCHsMioCTQsyAnvJaT1sEr7eon44yvm1Ndf3w==
   dependencies:
-    "@analogjs/vite-plugin-angular" "^2.7.1"
-    "@analogjs/vite-plugin-nitro" "^2.7.1"
+    "@analogjs/vite-plugin-angular" "^2.9.1"
+    "@analogjs/vite-plugin-nitro" "^2.9.1"
     nitropack "^2.13.1"
     oxc-parser "^0.121.0"
     vitefu "^1.1.2"
 
-"@analogjs/router@^2.7.1":
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/@analogjs/router/-/router-2.7.1.tgz#0eb96737850c142133c1d189c8f64f94b6361a24"
-  integrity sha512-Oqv04O2372ekEkAxA8tdG9yFsz9nxGUqevUnu2NwRLyqk/AHvKLtzmvNlzVfYiypldvSQ1/gQSJ3tKrrBzFdqQ==
+"@analogjs/router@^2.9.1":
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/@analogjs/router/-/router-2.9.1.tgz#19a6c8038313b5b48ba58f373b80424f65c8e3fa"
+  integrity sha512-5v7y5bDMZCiEXlHMREEEYKXkU2mHQkRVdcL9ffZI5yIh/JRmErAzcwgz84f+Eb28quIKR3FUyvAsO0deg0egeA==
   dependencies:
     tslib "^2.0.0"
 
-"@analogjs/vite-plugin-angular@^2.7.1":
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/@analogjs/vite-plugin-angular/-/vite-plugin-angular-2.7.1.tgz#6739e2d671ad731a13cc0b8114d1bd985f04ab20"
-  integrity sha512-avRNF3ryDkWqBNege4kIuEalGYI7XnmFJXf/IT/hDjSeHObi+NNXLYfYBcZifjOYuChTRcr7FhR2Ogu4EToiBg==
+"@analogjs/vite-plugin-angular@^2.9.1":
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/@analogjs/vite-plugin-angular/-/vite-plugin-angular-2.9.1.tgz#57630d802844101b5a7b34ec9bbecc380c52a20c"
+  integrity sha512-3pEU3oZ1xZgck2UDToJdPXxop9W7rUhaoQMcNk1gakgxvVXv14gVX5E9LWcuayZG7D3gu3n7w4qB/mlTCB09KQ==
   dependencies:
     magic-string "^0.30.21"
     obug "^2.1.1"
     oxc-parser "^0.121.0"
     tinyglobby "^0.2.14"
 
-"@analogjs/vite-plugin-nitro@^2.7.1":
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/@analogjs/vite-plugin-nitro/-/vite-plugin-nitro-2.7.1.tgz#016884ee156f836f5c2faf561d3f1427475bf065"
-  integrity sha512-OA1ubIGPIsHP1+5eZtuW15C8Uj6ZEZ0Vr7lng18ulIjz+V6hyl6uyF7tKYsOKj0bTpsSP28qOVcKGRWO4LXtfA==
+"@analogjs/vite-plugin-nitro@^2.9.1":
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/@analogjs/vite-plugin-nitro/-/vite-plugin-nitro-2.9.1.tgz#76fc4ab1f12f8dd72068449e206d4e98eae040e5"
+  integrity sha512-JwWd6TGMfcARkWFa96GUq2F7Ul3tLmA9FfvJP5L+OrmguhJoxhsvc/iC7jIp7I5c4UFEqreLo8OLYFp3pR+F0w==
   dependencies:
     defu "^6.1.4"
     esbuild "^0.27.3"
@@ -58,10 +58,10 @@
     radix3 "^1.1.2"
     xmlbuilder2 "^4.0.3"
 
-"@analogjs/vitest-angular@^2.7.1":
-  version "2.7.1"
-  resolved "https://registry.yarnpkg.com/@analogjs/vitest-angular/-/vitest-angular-2.7.1.tgz#482c4f21e79d093941c7acae5b4d4c63e510c1c4"
-  integrity sha512-Ra+XrsjlA5NvG0u94dxOE5ZE1gRVA/HMauYXiWEFTddeltJoI8bJ4Tc0du62iZo2AdJxUADaei8Liu0nm0GRBQ==
+"@analogjs/vitest-angular@^2.9.1":
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/@analogjs/vitest-angular/-/vitest-angular-2.9.1.tgz#8087fed20d6530946546284118774f6a61ce5a29"
+  integrity sha512-grL1ox4SQXBC+zcYr0JkUc7QC6ehAYltW4Fc3stHXSI5czmj5YH06osVwEx2QimsejDsWz/jY8XrS2Nd5mFR9Q==
 
 "@angular-devkit/architect@0.2201.7":
   version "0.2201.7"
