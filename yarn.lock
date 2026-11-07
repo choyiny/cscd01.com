@@ -199,10 +199,10 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/platform-server@^22.1.5":
-  version "22.1.5"
-  resolved "https://registry.yarnpkg.com/@angular/platform-server/-/platform-server-22.1.5.tgz#7086bd2c5812081a0a7e3c6dc2c7e269bbe0a5d6"
-  integrity sha512-v4T1uBwsbx2jNjOrGHDp0UVfOYOFBHABb+WwJLCCDxi2XZT+XaMHpSryq+DuO+CDUfq+OStCW1V4TzIuIiPV6A==
+"@angular/platform-server@^22.2.1":
+  version "22.2.1"
+  resolved "https://registry.yarnpkg.com/@angular/platform-server/-/platform-server-22.2.1.tgz#1b1a865f4ad24b4bce1f29870d9edd273959fc44"
+  integrity sha512-nnk4wuwI0u6AmMZpmpQXvJic+aFwG7+tkoWMtAr9kY2V9yl/WZIOhk8r4QtYHOzmxT3k7YRIpQ4BOlIg+jUXNw==
   dependencies:
     tslib "^2.3.0"
     xhr2 "^0.2.0"
@@ -6481,12 +6481,7 @@ ts-dedent@^2.2.0:
   resolved "https://registry.yarnpkg.com/ts-dedent/-/ts-dedent-2.2.0.tgz#39e4bd297cd036292ae2394eb3412be63f563bb5"
   integrity sha512-q5W7tVM71e2xjHZTlgfTDoPF/SmqKG5hddq9SzR49CH2hayqRKJtQ4mtRlSxKaJlR/+9rEM+mnBHf7I2/BQcpQ==
 
-tslib@^2.0.0, tslib@^2.1.0, tslib@^2.3.0, tslib@^2.4.0:
-  version "2.6.2"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.2.tgz#703ac29425e7b37cd6fd456e92404d46d1f3e4ae"
-  integrity sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==
-
-tslib@^2.8.1:
+tslib@^2.0.0, tslib@^2.1.0, tslib@^2.3.0, tslib@^2.4.0, tslib@^2.8.1:
   version "2.8.1"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.8.1.tgz#612efe4ed235d567e8aba5f2a5fab70280ade83f"
   integrity sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==
