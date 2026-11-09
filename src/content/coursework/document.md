@@ -6,4 +6,4 @@ dueDate: 2026-11-17T18:00:00-05:00
 ---
 **Groups:** This assignment will be completed in your pre-assigned groups from the beginning of the semester.
 
-Please read the following [handout](https://drive.google.com/file/d/14qiIZ7lAKRtnvzEMfwZ-SIQbFkK_108K/view?usp=sharing) and design accordingly.
+Please read the following [handout](https://docs.google.com/document/d/1kekkxGCBf6jKoBkf9Ceg_Lzs0mF-HFT-bIu4AZ6nrXs/edit?usp=sharing) and design accordingly.
